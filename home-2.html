@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -97,28 +97,22 @@
         </li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
-            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
-              data-lucide="log-in"></i> Login</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
-              data-lucide="user-plus"></i> Register</a></li>
-        
-        <!-- Mobile Toggles -->
+                <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
               <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
-          </div>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
             </button>
+            <a href="cart.html" class="action-icon text-decoration-none">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+            <a href="login.html" class="action-icon text-decoration-none" aria-label="Login">
+              <i data-lucide="user"></i>
+            </a>
           </div>
         </li>
         
@@ -136,7 +130,7 @@
       <div class="row g-0 h-100 min-vh-100 align-items-center">
         <!-- LEFT: Content -->
         <div class="col-lg-6 p-5 p-xl-5 hero-text-col">
-          <div class="pe-xl-5 mt-5 mt-lg-0 text-center-mobile">
+          <div class="pe-xl-5 mt-5 mt-lg-0 text-center text-lg-start">
             <div class="d-flex align-items-center gap-2 mb-4 justify-content-center justify-content-lg-start">
               <span class="bg-dark text-white px-3 py-1 text-uppercase letter-spacing-1 fw-bold small">Enterprise</span>
               <span class="text-muted fw-bold">Procurement</span>
@@ -144,26 +138,34 @@
             <h1 class="display-3 fw-bolder mb-4 text-dark lh-sm">
               Everything Your <br><span class="text-primary-custom" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80'); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: cover; background-position: center;">Project Needs.</span><br>One Reliable Partner.
             </h1>
-            <p class="lead mb-4 text-muted border-start border-4 border-warning ps-4">
+            <p class="lead mb-4 text-muted border-start border-4 border-warning ps-4 mx-auto mx-lg-0" style="max-width: 600px; text-align: left;">
               Advanced material sourcing platform. Track orders, manage bulk quotations, and secure scheduled deliveries through our unified procurement dashboard.
             </p>
-            <div class="d-flex flex-wrap gap-3 mobile-stack-btns">
-              <a href="categories.html" class="btn-dark btn btn-lg fw-bold rounded-0 px-4 py-3">Open Catalog</a>
-              <a href="pricing.html" class="btn-outline-custom border-dark text-dark btn-lg rounded-0 px-4 py-3 d-flex align-items-center gap-2">Contractor Rates <i data-lucide="arrow-right"></i></a>
+            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+              <a href="categories.html" class="btn-dark btn btn-lg fw-bold rounded-0 px-4 py-3 w-100 w-sm-auto">Open Catalog</a>
+              <a href="pricing.html" class="btn-outline-custom border-dark text-dark btn-lg rounded-0 px-4 py-3 d-flex justify-content-center align-items-center gap-2 w-100 w-sm-auto">Contractor Rates <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
         </div>
         
         <!-- RIGHT: Interactive Product/Material Composition -->
-        <div class="col-lg-6 bg-light position-relative h-100 min-vh-100 p-5 d-none d-lg-flex align-items-center justify-content-center">
+        <div class="col-lg-6 bg-light position-relative h-100 min-vh-100 p-5 d-flex align-items-center justify-content-center overflow-hidden">
           <div class="blueprint-bg position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.3;"></div>
           
-          <div class="position-relative w-100 h-100 d-flex align-items-center justify-content-center composition-area" style="perspective: 1000px;">
+          <!-- Desktop View: Absolute Positioning -->
+          <div class="position-relative w-100 h-100 d-none d-lg-flex align-items-center justify-content-center composition-area" style="perspective: 1000px;">
             <!-- Center piece -->
             <img src="assets/images/home2-hero1.png" alt="Hero 1" class="position-absolute shadow-lg block-anim rounded" style="width: 250px; height: 250px; object-fit: cover; z-index: 2; transform: translateZ(50px);">
             <!-- Floating materials -->
             <img src="assets/images/home2-hero2.png" alt="Hero 2" class="position-absolute shadow rounded block-anim" style="width: 180px; height: 180px; object-fit: cover; top: 15%; left: 10%; transform: translateZ(20px);">
             <img src="assets/images/home2-hero3.png" alt="Hero 3" class="position-absolute shadow rounded block-anim" style="width: 160px; height: 220px; object-fit: cover; bottom: 15%; right: 10%; transform: translateZ(80px);">
+          </div>
+
+          <!-- Mobile View: One by One Stacked -->
+          <div class="position-relative w-100 d-flex d-lg-none flex-column gap-4 align-items-center justify-content-center py-5" style="z-index: 1;">
+            <img src="assets/images/home2-hero1.png" alt="Hero 1" class="shadow-lg block-anim rounded" style="width: 100%; max-width: 280px; height: 250px; object-fit: cover;">
+            <img src="assets/images/home2-hero2.png" alt="Hero 2" class="shadow block-anim rounded" style="width: 100%; max-width: 280px; height: 180px; object-fit: cover;">
+            <img src="assets/images/home2-hero3.png" alt="Hero 3" class="shadow block-anim rounded" style="width: 100%; max-width: 280px; height: 220px; object-fit: cover;">
           </div>
         </div>
       </div>
@@ -197,7 +199,7 @@
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning" style="opacity: 0.03;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Live</h1>
-            <h4 class="fw-bold text-white mb-3">Budget Tracking</h4>
+            <h4 class="fw-bold text-white mb-3 text-nowrap">Budget Tracking</h4>
             <p class="text-secondary-subtle mb-0">Watch your cart value and bulk discounts update in real-time as you scale your order.</p>
           </div>
         </div>
@@ -208,7 +210,7 @@
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-white" style="opacity: 0.02;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Sync</h1>
-            <h4 class="fw-bold text-white mb-3">Multi-Site Routing</h4>
+            <h4 class="fw-bold text-white mb-3 text-nowrap">Multi-Site Routing</h4>
             <p class="text-secondary-subtle mb-0">Command your logistics fleet. Split single bulk orders seamlessly across multiple complex project sites.</p>
           </div>
         </div>
@@ -219,7 +221,7 @@
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-success" style="opacity: 0.03;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Auto</h1>
-            <h4 class="fw-bold text-white mb-3">Smart Inventory</h4>
+            <h4 class="fw-bold text-white mb-3 text-nowrap">Smart Inventory</h4>
             <p class="text-secondary-subtle mb-0">Tap into our API. When your site runs low, our system instantly flags it and prepares the next shipment.</p>
           </div>
         </div>
@@ -262,9 +264,9 @@
         </div>
         <div class="d-flex gap-2 flex-wrap justify-content-center" id="material-filter-btns">
           <button class="btn btn-dark active rounded-pill px-4 filter-btn" data-filter="all">All</button>
-          <button class="btn btn-outline-secondary rounded-pill px-4 bg-white filter-btn" data-filter="structural">Structural</button>
-          <button class="btn btn-outline-secondary rounded-pill px-4 bg-white filter-btn" data-filter="finishes">Finishes</button>
-          <button class="btn btn-outline-secondary rounded-pill px-4 bg-white filter-btn" data-filter="plumbing">Plumbing</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="structural">Structural</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="finishes">Finishes</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="plumbing">Plumbing</button>
         </div>
       </div>
 
@@ -558,36 +560,36 @@
         <div class="col-lg-6">
           <h2 class="display-6 fw-bold mb-4">Premium Brand Network</h2>
           <p class="text-muted mb-4">Sourcing directly from tier-1 manufacturers to guarantee structural integrity.</p>
-          <div class="row g-3">
+          <div class="row g-0">
             <!-- 6 Brand Cards -->
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand A</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand A.png" alt="Brand A" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand B</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand B.png" alt="Brand B" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand C</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand C.png" alt="Brand C" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand D</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand D.png" alt="Brand D" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand E</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand E.png" alt="Brand E" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
             <div class="col-4">
-              <div class="premium-card p-3 d-flex align-items-center justify-content-center bg-light" style="height: 100px;">
-                <span class="fw-bold text-muted">Brand F</span>
+              <div class="premium-card p-0 overflow-hidden border-0 rounded-0" style="height: 100px;">
+                <img src="assets/images/Brand F.png" alt="Brand F" class="w-100 h-100" style="object-fit: cover;">
               </div>
             </div>
           </div>
@@ -720,6 +722,7 @@
   </script>
 </body>
 </html>
+
 
 
 

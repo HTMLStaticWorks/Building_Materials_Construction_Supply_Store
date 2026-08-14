@@ -40,25 +40,31 @@ function initTheme() {
 
 // RTL/LTR System
 function initRTL() {
-  const dirToggle = document.getElementById('dir-toggle');
+  const dirToggles = document.querySelectorAll('#dir-toggle, #dir-toggle-mobile');
   const html = document.documentElement;
   
   let currentDir = localStorage.getItem('dir') || 'ltr';
   applyDir(currentDir);
   
-  if (dirToggle) {
-    dirToggle.addEventListener('click', () => {
-      currentDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
-      applyDir(currentDir);
-      localStorage.setItem('dir', currentDir);
-    });
-  }
+  dirToggles.forEach(toggle => {
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        currentDir = currentDir === 'ltr' ? 'rtl' : 'ltr';
+        applyDir(currentDir);
+        localStorage.setItem('dir', currentDir);
+      });
+    }
+  });
   
   function applyDir(dir) {
     html.setAttribute('dir', dir);
-    if(dir === 'rtl') {
-       // if using Bootstrap RTL CSS you'd load it here dynamically, 
-       // but we handle basic RTL via CSS rules and dir="rtl"
+    const bsLink = document.querySelector('link[href*="bootstrap"]');
+    if (bsLink) {
+      if (dir === 'rtl') {
+        bsLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css';
+      } else {
+        bsLink.href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css';
+      }
     }
   }
 }
@@ -94,7 +100,7 @@ function initCart() {
 function initMobileMenu() {
   // Assuming Bootstrap's offcanvas handles the bulk, 
   // we just need to ensure links close the menu
-  const offcanvasLinks = document.querySelectorAll('.offcanvas .nav-link');
+  const offcanvasLinks = document.querySelectorAll('.offcanvas .nav-link:not([data-bs-toggle="collapse"])');
   offcanvasLinks.forEach(link => {
     link.addEventListener('click', () => {
       const offcanvasEl = document.getElementById('mobileMenu');

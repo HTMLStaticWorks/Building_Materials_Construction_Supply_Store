@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -76,7 +76,7 @@
     <div class="offcanvas-body px-0">
       <ul class="navbar-nav">
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
         <li class="nav-item px-3 py-2">
@@ -91,30 +91,24 @@
             </ul>
           </div>
         </li>
-        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
-            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
-              data-lucide="log-in"></i> Login</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
-              data-lucide="user-plus"></i> Register</a></li>
-        
-        <!-- Mobile Toggles -->
+                <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
               <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
-          </div>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
             </button>
+            <a href="cart.html" class="action-icon text-decoration-none">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+            <a href="login.html" class="action-icon text-decoration-none" aria-label="Login">
+              <i data-lucide="user"></i>
+            </a>
           </div>
         </li>
         
@@ -140,7 +134,7 @@
     <div class="container">
       <div class="row g-4 justify-content-center pt-4">
         <!-- Tier 1 -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-xl-3">
           <div class="premium-card p-4 h-100 d-flex flex-column bg-white text-center">
             <h5 class="fw-bold mb-1">Standard</h5>
             <p class="text-muted small mb-4">For homeowners and small DIY projects.</p>
@@ -158,7 +152,7 @@
         </div>
 
         <!-- Tier 2 -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-xl-3">
           <div class="premium-card p-4 h-100 d-flex flex-column bg-white border-primary shadow-lg position-relative transform-scale text-center overflow-visible">
             <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-primary px-3 py-2">Most Popular</span>
             <h5 class="fw-bold mb-1 mt-2">Contractor</h5>
@@ -178,7 +172,7 @@
         </div>
 
         <!-- Tier 3 -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-xl-3">
           <div class="premium-card p-4 h-100 d-flex flex-column bg-white text-center">
             <h5 class="fw-bold mb-1">Bulk Project</h5>
             <p class="text-muted small mb-4">For mid-to-large commercial developments.</p>
@@ -197,7 +191,7 @@
         </div>
 
         <!-- Tier 4 -->
-        <div class="col-md-6 col-lg-3">
+        <div class="col-md-6 col-xl-3">
           <div class="premium-card p-4 h-100 d-flex flex-column bg-dark text-white text-center">
             <h5 class="fw-bold mb-1 text-white">Enterprise</h5>
             <p class="text-secondary-subtle small mb-4">For massive infrastructure & high-rises.</p>
@@ -211,7 +205,7 @@
               <li class="mb-2"><i data-lucide="check" class="text-warning me-2" style="width:16px;"></i> On-site logistics agent</li>
               <li class="mb-2"><i data-lucide="check" class="text-warning me-2" style="width:16px;"></i> ERP integration</li>
             </ul>
-            <a href="contact.html" class="btn btn-primary-custom fw-bold w-100 mt-auto">Request Custom Quote</a>
+            <a href="contact.html" class="btn btn-primary-custom w-100 mt-auto">Request Custom Quote</a>
           </div>
         </div>
       </div>
@@ -283,24 +277,24 @@
             <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                  How is the volume discount calculated?
+                  <span dir="ltr">How is the volume discount calculated?</span>
                 </button>
               </h2>
               <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFaq">
                 <div class="accordion-body text-muted">
-                  Discounts are applied dynamically based on the total quantity of items in your cart. For example, purchasing 500 bags of cement triggers a different price tier than purchasing 50 bags.
+                  <span dir="ltr">Discounts are applied dynamically based on the total quantity of items in your cart. For example, purchasing 500 bags of cement triggers a different price tier than purchasing 50 bags.</span>
                 </div>
               </div>
             </div>
             <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                  What documents are needed for a Contractor account?
+                  <span dir="ltr">What documents are needed for a Contractor account?</span>
                 </button>
               </h2>
               <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
                 <div class="accordion-body text-muted">
-                  We require a valid business license, tax identification number, and proof of commercial liability insurance.
+                  <span dir="ltr">We require a valid business license, tax identification number, and proof of commercial liability insurance.</span>
                 </div>
               </div>
             </div>
@@ -308,12 +302,12 @@
             <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq3">
-                  Do you offer price matching?
+                  <span dir="ltr">Do you offer price matching?</span>
                 </button>
               </h2>
               <div id="pricingFaq3" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
                 <div class="accordion-body text-muted">
-                  Yes, we offer competitive price matching on identical in-stock items from local competitors. Please provide a written quote to your dedicated account manager.
+                  <span dir="ltr">Yes, we offer competitive price matching on identical in-stock items from local competitors. Please provide a written quote to your dedicated account manager.</span>
                 </div>
               </div>
             </div>
@@ -321,12 +315,12 @@
             <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq4">
-                  What payment methods are accepted?
+                  <span dir="ltr">What payment methods are accepted?</span>
                 </button>
               </h2>
               <div id="pricingFaq4" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
                 <div class="accordion-body text-muted">
-                  We accept all major credit cards, wire transfers, and offer net-30 terms for approved Contractor and Enterprise accounts.
+                  <span dir="ltr">We accept all major credit cards, wire transfers, and offer net-30 terms for approved Contractor and Enterprise accounts.</span>
                 </div>
               </div>
             </div>
@@ -334,12 +328,12 @@
             <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#pricingFaq5">
-                  Are there shipping fees for bulk orders?
+                  <span dir="ltr">Are there shipping fees for bulk orders?</span>
                 </button>
               </h2>
               <div id="pricingFaq5" class="accordion-collapse collapse" data-bs-parent="#pricingFaq">
                 <div class="accordion-body text-muted">
-                  Shipping is calculated based on distance and total weight. However, Enterprise accounts and orders over $10,000 often qualify for free local delivery.
+                  <span dir="ltr">Shipping is calculated based on distance and total weight. However, Enterprise accounts and orders over $10,000 often qualify for free local delivery.</span>
                 </div>
               </div>
             </div>
@@ -434,6 +428,7 @@
   </script>
 </body>
 </html>
+
 
 
 

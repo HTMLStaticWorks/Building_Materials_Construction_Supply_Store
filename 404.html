@@ -76,7 +76,7 @@
     <div class="offcanvas-body px-0">
       <ul class="navbar-nav">
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
         <li class="nav-item px-3 py-2">
@@ -93,28 +93,22 @@
         </li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
-            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
-              data-lucide="log-in"></i> Login</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
-              data-lucide="user-plus"></i> Register</a></li>
-        
-        <!-- Mobile Toggles -->
+                <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
               <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
-          </div>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
             </button>
+            <a href="cart.html" class="action-icon text-decoration-none">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+            <a href="login.html" class="action-icon text-decoration-none" aria-label="Login">
+              <i data-lucide="user"></i>
+            </a>
           </div>
         </li>
         
@@ -241,6 +235,7 @@
   </script>
 </body>
 </html>
+
 
 
 

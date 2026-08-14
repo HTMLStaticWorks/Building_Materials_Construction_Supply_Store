@@ -123,7 +123,7 @@ p {
 
 .text-white, .text-dark, .text-body { color: var(--text-primary) !important; }
 .text-muted { color: var(--text-muted) !important; }
-.text-secondary-subtle { color: var(--text-secondary) !important; }
+.text-secondary-subtle, .text-body-secondary { color: var(--text-secondary) !important; }
 
 .border-white, .border-dark, .border-secondary, .border-light { border-color: var(--border-color) !important; }
 
@@ -156,8 +156,8 @@ svg path { stroke: currentColor; }
   background-color: var(--accent-primary);
   color: #111827 !important;
   font-weight: 600;
-  border: none;
-  padding: 12px 24px;
+  border: 2px solid transparent;
+  padding: 10px 24px;
   border-radius: var(--border-radius);
   transition: var(--transition);
   box-shadow: var(--shadow-sm);
@@ -165,12 +165,14 @@ svg path { stroke: currentColor; }
   align-items: center;
   justify-content: center;
   gap: 8px;
+  text-decoration: none;
 }
 .btn-primary-custom:hover {
   background-color: var(--accent-secondary);
   color: #111827 !important;
   transform: translateY(-2px);
   box-shadow: var(--shadow-primary);
+  text-decoration: none;
 }
 
 .btn-outline-custom {
@@ -185,10 +187,26 @@ svg path { stroke: currentColor; }
   align-items: center;
   justify-content: center;
   gap: 8px;
+  text-decoration: none;
 }
 .btn-outline-custom:hover {
   border-color: var(--accent-primary) !important;
   color: var(--accent-primary) !important;
+  text-decoration: none;
+}
+
+.filter-btn.btn-outline-secondary:hover,
+.filter-btn.btn-outline-secondary:focus,
+.filter-btn.btn-outline-secondary:active,
+.filter-btn.btn-outline-secondary.active {
+  background-color: var(--accent-primary) !important;
+  color: #111827 !important;
+  border-color: var(--accent-primary) !important;
+}
+
+.hero-btn {
+  width: 250px;
+  height: 58px;
 }
 
 /* =========================================================================
@@ -215,7 +233,7 @@ svg path { stroke: currentColor; }
   transition: var(--transition);
 }
 .nav-link:hover, .nav-link.active {
-  color: var(--text-primary) !important;
+  color: var(--accent-primary) !important;
 }
 
 .nav-actions {
@@ -276,6 +294,10 @@ svg path { stroke: currentColor; }
 .dropdown-item:hover {
   background-color: var(--bg-secondary);
   color: var(--text-primary);
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--accent-primary) !important;
+  background-color: transparent !important;
 }
 
 /* Mobile Navbar Overrides */
@@ -455,3 +477,33 @@ svg path { stroke: currentColor; }
     text-align: center !important;
   }
 }
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 999;
+  opacity: 0.9;
+  text-decoration: none;
+}
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  color: #fff;
+}
+
+/* Hover Fixes */
+.text-primary-custom { transition: color 0.2s ease; }
+.text-primary-custom:hover { color: var(--accent-secondary) !important; text-decoration: underline !important; }
+.btn-outline-custom img { transition: transform 0.2s ease; }
+.btn-outline-custom:hover img { transform: scale(1.15); }
+
+button:hover > i[data-lucide], a:hover > i[data-lucide] { transform: scale(1.1); transition: transform 0.2s ease; }
+i[data-lucide] { transition: transform 0.2s ease; }
+
+/* Dark Mode Social Icon Contrast */
+[data-theme="dark"] img[src*="x.svg"] { filter: invert(1); }

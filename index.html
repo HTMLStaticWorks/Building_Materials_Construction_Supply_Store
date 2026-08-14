@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -84,52 +84,45 @@
   <!-- Mobile Offcanvas Menu -->
   <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
     <div class="offcanvas-header border-bottom border-secondary">
-      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Industrial<span class="text-primary-custom">Supply</span>
-      </h5>
+      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Industrial<span class="text-primary-custom">Supply</span></h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body px-0">
       <ul class="navbar-nav">
-        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
         <li class="nav-item px-3 py-2">
-          <a class="nav-link d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+          <a class="nav-link d-flex justify-content-center align-items-center text-primary-custom fw-bold" data-bs-toggle="collapse"
             href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">
             More <i data-lucide="chevron-down" class="ms-1"></i>
           </a>
           <div class="collapse" id="moreMenu">
             <ul class="list-unstyled p-0 m-0 py-2 mt-2 text-center">
-              <li><a class="nav-link justify-content-center py-1" href="categories.html">Categories</a></li>
-              <li><a class="nav-link justify-content-center py-1" href="brands.html">Brands</a></li>
+              <li><a class="nav-link d-flex justify-content-center py-1 text-primary-custom fw-bold" href="categories.html">Categories</a></li>
+              <li><a class="nav-link d-flex justify-content-center py-1 text-primary-custom fw-bold" href="brands.html">Brands</a></li>
             </ul>
           </div>
         </li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
-            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
-              data-lucide="log-in"></i> Login</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
-              data-lucide="user-plus"></i> Register</a></li>
-        
-        <!-- Mobile Toggles -->
+                <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
               <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
-          </div>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
             </button>
+            <a href="cart.html" class="action-icon text-decoration-none">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+            <a href="login.html" class="action-icon text-decoration-none" aria-label="Login">
+              <i data-lucide="user"></i>
+            </a>
           </div>
         </li>
         
@@ -146,7 +139,7 @@
     style="min-height: 100vh; display: flex; align-items: center;">
     <div class="container position-relative z-1">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0 hero-content text-center-mobile">
+        <div class="col-lg-6 mb-5 mb-lg-0 hero-content text-center text-lg-start">
           <span
             class="badge text-bg-warning rounded-pill px-3 py-2 mb-3 fw-semibold text-uppercase letter-spacing-1">Premium
             B2B Supply</span>
@@ -155,10 +148,10 @@
           <p class="lead mb-5 text-secondary-subtle">Professional construction materials, contractor pricing, trusted
             brands, and reliable bulk supply.</p>
 
-          <div class="d-flex flex-wrap gap-3 mobile-stack-btns">
-            <a href="categories.html" class="btn-primary-custom btn-lg">Shop Materials <i
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mobile-stack-btns">
+            <a href="categories.html" class="btn-primary-custom btn-lg hero-btn">Shop Materials <i
                 data-lucide="arrow-right"></i></a>
-            <a href="contact.html" class="btn-outline-custom border-white text-white btn-lg">Request Bulk Quote</a>
+            <a href="contact.html" class="btn-outline-custom border-white text-white btn-lg hero-btn">Request Bulk Quote</a>
           </div>
 
           <div
@@ -179,23 +172,40 @@
             <img src="assets/images/home1-hero.png" alt="Construction Materials"
               class="img-fluid rounded-4 shadow-lg w-100 h-100 object-fit-cover">
 
-            <!-- Floating cards -->
-            <div class="position-absolute bg-white text-dark p-3 rounded shadow-lg"
-              style="top: 10%; right: -5%; transform: translateZ(50px);">
-              <div class="d-flex align-items-center gap-2">
+            <!-- Floating cards (Desktop) -->
+            <div class="d-none d-lg-block">
+              <div class="position-absolute bg-white text-dark p-3 rounded shadow-lg"
+                style="top: 10%; right: -5%; transform: translateZ(50px);">
+                <div class="d-flex align-items-center gap-2">
+                  <i data-lucide="tag" class="text-primary-custom"></i>
+                  <span class="fw-bold">Bulk Pricing</span>
+                </div>
+              </div>
+
+              <div class="position-absolute bg-dark text-white p-3 rounded shadow-lg border border-secondary"
+                style="bottom: 15%; left: -10%; transform: translateZ(80px);">
+                <div class="d-flex align-items-center gap-2">
+                  <i data-lucide="shield-check" class="text-success"></i>
+                  <span class="fw-bold">Contractor Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Cards (Below Image) -->
+          <div class="d-flex d-lg-none gap-3 mt-4 flex-column flex-sm-row justify-content-center">
+            <div class="bg-white text-dark p-3 rounded shadow border flex-fill">
+              <div class="d-flex align-items-center justify-content-center gap-2">
                 <i data-lucide="tag" class="text-primary-custom"></i>
                 <span class="fw-bold">Bulk Pricing</span>
               </div>
             </div>
-
-            <div class="position-absolute bg-dark text-white p-3 rounded shadow-lg border border-secondary"
-              style="bottom: 15%; left: -10%; transform: translateZ(80px);">
-              <div class="d-flex align-items-center gap-2">
+            <div class="bg-dark text-white p-3 rounded shadow border border-secondary flex-fill">
+              <div class="d-flex align-items-center justify-content-center gap-2">
                 <i data-lucide="shield-check" class="text-success"></i>
                 <span class="fw-bold">Contractor Ready</span>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </div>
@@ -211,19 +221,19 @@
           <h2 class="display-5 fw-bold mb-2">Material Categories</h2>
           <p class="lead text-muted mb-0">Browse our comprehensive catalog of construction materials.</p>
         </div>
-        <a href="categories.html" class="btn-outline-custom d-none d-md-inline-flex">View All <i
+        <a href="categories.html" class="btn-outline-custom d-none d-lg-inline-flex">View All <i
             data-lucide="arrow-right"></i></a>
       </div>
 
       <div class="row g-4">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Cement_Concrete.png" alt="Cement & Concrete">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="box"></i>
@@ -243,12 +253,12 @@
 
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Steel_Reinforcement.png" alt="Steel & Reinforcement">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="align-justify"></i>
@@ -267,12 +277,12 @@
 
         <!-- Card 3 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Bricks_Blocks.png" alt="Bricks & Blocks">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="layers"></i>
@@ -291,12 +301,12 @@
 
         <!-- Card 4 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Tiles_Flooring.png" alt="Tiles & Flooring">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="grid"></i>
@@ -315,12 +325,12 @@
 
         <!-- Card 5 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Glass_Architectural.png" alt="Glass & Architectural">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="panels-top-left"></i>
@@ -339,12 +349,12 @@
 
         <!-- Card 6 -->
         <div class="col-md-6 col-lg-4">
-          <a href="categories.html" class="text-decoration-none d-block">
-            <div class="premium-card position-relative group">
+          <a href="categories.html" class="text-decoration-none d-block h-100">
+            <div class="premium-card position-relative group h-100 d-flex flex-column">
               <div class="card-image" style="height: 240px;">
                 <img src="assets/images/Plumbing.png" alt="Plumbing">
               </div>
-              <div class="p-4 bg-card">
+              <div class="p-4 bg-card flex-grow-1 d-flex flex-column">
                 <div class="d-flex align-items-center gap-3 mb-3">
                   <div class="bg-primary-custom p-2 rounded flex-shrink-0">
                     <i data-lucide="droplets"></i>
@@ -362,7 +372,7 @@
         </div>
 
       </div>
-      <div class="text-center mt-5 d-block d-md-none">
+      <div class="text-center mt-5 d-block d-lg-none">
         <a href="categories.html" class="btn-outline-custom w-100">View All Categories <i
             data-lucide="arrow-right"></i></a>
       </div>
@@ -373,20 +383,20 @@
   <section class="section-padding bg-dark text-white blueprint-bg">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-6 mb-5 mb-lg-0 text-center-mobile">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
           <span class="text-primary-custom fw-bold letter-spacing-1 text-uppercase mb-2 d-block">B2B Procurement</span>
           <h2 class="display-5 fw-bold mb-4 text-white">Better Rates for Bigger Projects</h2>
           <p class="lead text-secondary-subtle mb-4">Join our contractor network to unlock bulk volume pricing,
             scheduled deliveries, and dedicated account management for your construction projects.</p>
           <ul class="list-unstyled mb-5">
-            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i> <span>Up
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i> <span>Up
                 to 25% off standard retail prices</span></li>
-            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
               <span>Dedicated site delivery logistics</span></li>
-            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
+            <li class="d-flex justify-content-center justify-content-lg-start align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
               <span>Custom project quotations</span></li>
           </ul>
-          <div class="mobile-stack-btns">
+          <div class="mobile-stack-btns d-flex justify-content-center justify-content-lg-start">
             <a href="pricing.html" class="btn-primary-custom btn-lg">Request Contractor Pricing</a>
           </div>
         </div>
@@ -410,11 +420,11 @@
                 </select>
               </div>
               <div class="row g-3 mb-3">
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <label class="form-label fw-bold">Area (sq m)</label>
                   <input type="number" class="form-control form-control-custom" id="est-area" placeholder="e.g. 100">
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                   <label class="form-label fw-bold">Depth/Thickness (m)</label>
                   <input type="number" class="form-control form-control-custom" id="est-depth" placeholder="e.g. 0.15">
                 </div>
@@ -764,50 +774,58 @@
       </div>
       <div class="row g-4">
         <div class="col-md-6">
-          <div class="premium-card p-4 d-flex align-items-center gap-4">
+          <div class="premium-card p-4 d-flex align-items-stretch gap-4 h-100">
             <img src="assets/images/Residential Construction.png"
-              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Residential Construction">
-            <div>
-              <h5 class="fw-bold">Residential Construction</h5>
-              <p class="text-muted small">Complete material kits for home builders.</p>
-              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
-                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+              class="rounded-3 align-self-center flex-shrink-0" style="width: 120px; height: 120px; object-fit: cover;" alt="Residential Construction">
+            <div class="d-flex flex-column w-100 py-1">
+              <h5 class="fw-bold mb-2">Residential Construction</h5>
+              <p class="text-muted small mb-2">Complete material kits for home builders.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                    data-lucide="arrow-right" style="width: 14px;"></i></a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="premium-card p-4 d-flex align-items-center gap-4">
+          <div class="premium-card p-4 d-flex align-items-stretch gap-4 h-100">
             <img src="assets/images/Commercial Projects.png"
-              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Commercial Projects">
-            <div>
-              <h5 class="fw-bold">Commercial Projects</h5>
-              <p class="text-muted small">High-volume supply for major developments.</p>
-              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
-                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+              class="rounded-3 align-self-center flex-shrink-0" style="width: 120px; height: 120px; object-fit: cover;" alt="Commercial Projects">
+            <div class="d-flex flex-column w-100 py-1">
+              <h5 class="fw-bold mb-2">Commercial Projects</h5>
+              <p class="text-muted small mb-2">High-volume supply for major developments.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                    data-lucide="arrow-right" style="width: 14px;"></i></a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="premium-card p-4 d-flex align-items-center gap-4">
+          <div class="premium-card p-4 d-flex align-items-stretch gap-4 h-100">
             <img src="assets/images/Industrial Construction.png"
-              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Industrial Construction">
-            <div>
-              <h5 class="fw-bold">Industrial Construction</h5>
-              <p class="text-muted small">Heavy-duty structural materials and steel.</p>
-              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
-                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+              class="rounded-3 align-self-center flex-shrink-0" style="width: 120px; height: 120px; object-fit: cover;" alt="Industrial Construction">
+            <div class="d-flex flex-column w-100 py-1">
+              <h5 class="fw-bold mb-2">Industrial Construction</h5>
+              <p class="text-muted small mb-2">Heavy-duty structural materials and steel.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                    data-lucide="arrow-right" style="width: 14px;"></i></a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="premium-card p-4 d-flex align-items-center gap-4">
+          <div class="premium-card p-4 d-flex align-items-stretch gap-4 h-100">
             <img src="assets/images/Renovation & Interior.png"
-              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Renovation & Interior">
-            <div>
-              <h5 class="fw-bold">Renovation & Interior</h5>
-              <p class="text-muted small">Premium finishes, tiles, and fixtures.</p>
-              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
-                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+              class="rounded-3 align-self-center flex-shrink-0" style="width: 120px; height: 120px; object-fit: cover;" alt="Renovation & Interior">
+            <div class="d-flex flex-column w-100 py-1">
+              <h5 class="fw-bold mb-2">Renovation & Interior</h5>
+              <p class="text-muted small mb-2">Premium finishes, tiles, and fixtures.</p>
+              <div class="mt-auto">
+                <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                    data-lucide="arrow-right" style="width: 14px;"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -864,7 +882,7 @@
           <div class="row g-4">
             <!-- 4 Testimonials -->
             <div class="col-md-6">
-              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column text-start text-md-center text-xl-start">
                 <div class="text-warning mb-2">
                   <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
                     class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
@@ -873,9 +891,9 @@
                 </div>
                 <p class="small text-muted mb-4">"The bulk pricing on TMT steel was unmatched. Fast delivery right to
                   our commercial site."</p>
-                <div class="d-flex align-items-center gap-3 mt-auto">
+                <div class="d-flex align-items-center gap-3 mt-auto justify-content-start justify-content-md-center justify-content-xl-start">
                   <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="David R.">
-                  <div>
+                  <div class="text-start">
                     <h6 class="fw-bold mb-0">David R.</h6>
                     <span class="small text-muted">Contractor</span>
                   </div>
@@ -883,7 +901,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column text-start text-md-center text-xl-start">
                 <div class="text-warning mb-2">
                   <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
                     class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
@@ -892,9 +910,9 @@
                 </div>
                 <p class="small text-muted mb-4">"Their estimator tool saved us so much time. Accurate and perfectly
                   integrated into the cart."</p>
-                <div class="d-flex align-items-center gap-3 mt-auto">
+                <div class="d-flex align-items-center gap-3 mt-auto justify-content-start justify-content-md-center justify-content-xl-start">
                   <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="Sarah K.">
-                  <div>
+                  <div class="text-start">
                     <h6 class="fw-bold mb-0">Sarah K.</h6>
                     <span class="small text-muted">Architect</span>
                   </div>
@@ -902,7 +920,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column text-start text-md-center text-xl-start">
                 <div class="text-warning mb-2">
                   <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
                     class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
@@ -911,9 +929,9 @@
                 </div>
                 <p class="small text-muted mb-4">"Excellent selection of premium tiles for our hotel renovation
                   project."</p>
-                <div class="d-flex align-items-center gap-3 mt-auto">
+                <div class="d-flex align-items-center gap-3 mt-auto justify-content-start justify-content-md-center justify-content-xl-start">
                   <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="Michael T.">
-                  <div>
+                  <div class="text-start">
                     <h6 class="fw-bold mb-0">Michael T.</h6>
                     <span class="small text-muted">Procurement Mgr</span>
                   </div>
@@ -921,7 +939,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0 d-flex flex-column text-start text-md-center text-xl-start">
                 <div class="text-warning mb-2">
                   <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
                     class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
@@ -930,9 +948,9 @@
                 </div>
                 <p class="small text-muted mb-4">"Reliable supply every single time. They understand the demands of real
                   construction."</p>
-                <div class="d-flex align-items-center gap-3 mt-auto">
+                <div class="d-flex align-items-center gap-3 mt-auto justify-content-start justify-content-md-center justify-content-xl-start">
                   <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="James L.">
-                  <div>
+                  <div class="text-start">
                     <h6 class="fw-bold mb-0">James L.</h6>
                     <span class="small text-muted">Builder</span>
                   </div>
@@ -1021,6 +1039,11 @@
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </a>
+
   <!-- Script Initializations -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
@@ -1082,6 +1105,7 @@
 </body>
 
 </html>
+
 
 
 

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -36,12 +36,12 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="categories.html">Categories</a></li>
-              <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+              <li><a class="dropdown-item active" href="brands.html">Brands</a></li>
             </ul>
           </li>
           <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
@@ -76,45 +76,39 @@
     <div class="offcanvas-body px-0">
       <ul class="navbar-nav">
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="home-2.html">Home 2</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
         <li class="nav-item px-3 py-2">
-          <a class="nav-link d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+          <a class="nav-link active d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
             href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">
             More <i data-lucide="chevron-down" class="ms-1"></i>
           </a>
           <div class="collapse" id="moreMenu">
             <ul class="list-unstyled p-0 m-0 py-2 mt-2 text-center">
               <li><a class="nav-link justify-content-center py-1" href="categories.html">Categories</a></li>
-              <li><a class="nav-link justify-content-center py-1" href="brands.html">Brands</a></li>
+              <li><a class="nav-link active justify-content-center py-1" href="brands.html">Brands</a></li>
             </ul>
           </div>
         </li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
-            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
-              data-lucide="log-in"></i> Login</a></li>
-        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
-              data-lucide="user-plus"></i> Register</a></li>
-        
-        <!-- Mobile Toggles -->
+                <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
               <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
             </button>
-          </div>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <div class="d-flex align-items-center justify-content-center gap-4">
-            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
             <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
               <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
             </button>
+            <a href="cart.html" class="action-icon text-decoration-none">
+              <i data-lucide="shopping-cart"></i>
+              <span class="cart-badge">0</span>
+            </a>
+            <a href="login.html" class="action-icon text-decoration-none" aria-label="Login">
+              <i data-lucide="user"></i>
+            </a>
           </div>
         </li>
         
@@ -184,237 +178,219 @@
       </div>
       <div class="row g-4" id="brands-grid">
         <div class="col-md-6 col-lg-4 brand-card" data-category="Cement">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/UltraTech Cement.png" alt="UltraTech Cement" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Cement & Concrete</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/UltraTech Cement.png" alt="UltraTech Cement" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Cement & Concrete</span>
             <h5 class="fw-bold">UltraTech Cement</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Cement">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Ambuja Cements.png" alt="Ambuja Cements" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Cement & Concrete</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Ambuja Cements.png" alt="Ambuja Cements" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Cement & Concrete</span>
             <h5 class="fw-bold">Ambuja Cements</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Cement">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/ACC Limited.png" alt="ACC Limited" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Cement & Concrete</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/ACC Limited.png" alt="ACC Limited" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Cement & Concrete</span>
             <h5 class="fw-bold">ACC Limited</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Steel">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Tata Tiscon.png" alt="Tata Tiscon" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Steel & Rebar</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Tata Tiscon.png" alt="Tata Tiscon" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Steel & Rebar</span>
             <h5 class="fw-bold">Tata Tiscon</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Steel">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/JSW Steel.png" alt="JSW Steel" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Steel & Rebar</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/JSW Steel.png" alt="JSW Steel" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Steel & Rebar</span>
             <h5 class="fw-bold">JSW Steel</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Steel">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Jindal Panther.png" alt="Jindal Panther" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Steel & Rebar</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Jindal Panther.png" alt="Jindal Panther" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Steel & Rebar</span>
             <h5 class="fw-bold">Jindal Panther</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Tiles">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Kajaria Ceramics.png" alt="Kajaria Ceramics" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Kajaria Ceramics.png" alt="Kajaria Ceramics" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
             <h5 class="fw-bold">Kajaria Ceramics</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Tiles">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Somany Ceramics.png" alt="Somany Ceramics" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Somany Ceramics.png" alt="Somany Ceramics" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
             <h5 class="fw-bold">Somany Ceramics</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Tiles">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Nitco Tiles.png" alt="Nitco Tiles" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Nitco Tiles.png" alt="Nitco Tiles" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Tiles & Flooring</span>
             <h5 class="fw-bold">Nitco Tiles</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Plumbing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Finolex Pipes.png" alt="Finolex Pipes" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Plumbing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Finolex Pipes.png" alt="Finolex Pipes" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Plumbing</span>
             <h5 class="fw-bold">Finolex Pipes</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Plumbing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Ashirvad Pipes.png" alt="Ashirvad Pipes" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Plumbing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Ashirvad Pipes.png" alt="Ashirvad Pipes" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Plumbing</span>
             <h5 class="fw-bold">Ashirvad Pipes</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Plumbing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Supreme Plastics.png" alt="Supreme Plastics" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Plumbing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Supreme Plastics.png" alt="Supreme Plastics" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Plumbing</span>
             <h5 class="fw-bold">Supreme Plastics</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Glass">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Saint-Gobain.png" alt="Saint-Gobain" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Glass</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Saint-Gobain.png" alt="Saint-Gobain" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Glass</span>
             <h5 class="fw-bold">Saint-Gobain</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Glass">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Asahi India Glass (AIS).png" alt="Asahi India Glass (AIS)" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Glass</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Asahi India Glass (AIS).png" alt="Asahi India Glass (AIS)" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Glass</span>
             <h5 class="fw-bold">Asahi India Glass (AIS)</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Glass">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Modiguard.png" alt="Modiguard" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Glass</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Modiguard.png" alt="Modiguard" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Glass</span>
             <h5 class="fw-bold">Modiguard</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Finishing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Asian Paints.png" alt="Asian Paints" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Finishing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Asian Paints.png" alt="Asian Paints" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Finishing</span>
             <h5 class="fw-bold">Asian Paints</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Finishing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Berger Paints.png" alt="Berger Paints" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Finishing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Berger Paints.png" alt="Berger Paints" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Finishing</span>
             <h5 class="fw-bold">Berger Paints</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
         <div class="col-md-6 col-lg-4 brand-card" data-category="Finishing">
-          <div class="premium-card p-4 text-center h-100 d-flex flex-column">
-            <div class="card-image mb-4 mx-auto w-100" style="height: 160px; display:flex; align-items:center; justify-content:center;">
-              <img src="assets/images/Nerolac.png" alt="Nerolac" class="w-100 h-100" style="object-fit: contain;">
-            </div>
-            <span class="badge bg-primary-custom text-white mb-2 mx-auto" style="width: fit-content;">Finishing</span>
+          <div class="premium-card p-0 text-center h-100 d-flex flex-column overflow-hidden">
+            <div class="card-image w-100" style="height: 160px;">
+              <img src="assets/images/Nerolac.png" alt="Nerolac" class="w-100 h-100" style="object-fit: cover;">
+            </div><div class="p-4 d-flex flex-column flex-grow-1"><span class="badge bg-primary-custom text-white mb-3 mx-auto" style="width: fit-content;">Finishing</span>
             <h5 class="fw-bold">Nerolac</h5>
             <div class="d-flex align-items-center justify-content-center gap-2 mb-4 text-success small fw-bold">
               <i data-lucide="shield-check" style="width: 16px;"></i> Verified Partner
             </div>
-            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a>
+            <a href="categories.html" class="btn-outline-custom w-100 mt-auto">View Products</a></div>
           </div>
         </div>
       </div>
@@ -425,10 +401,10 @@
   <section class="section-padding bg-dark text-white blueprint-bg">
     <div class="container">
       <div class="row g-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6 text-start text-md-center text-lg-start mb-5 mb-lg-0">
           <h2 class="display-6 fw-bold mb-4">Quality Standards</h2>
-          <p class="text-secondary-subtle mb-4">We do not list unverified manufacturers. Every brand in our network must pass a rigorous 5-point quality assurance protocol before their products are permitted in our catalog.</p>
-          <ul class="list-unstyled mb-0">
+          <p class="text-secondary-subtle mb-4 mx-auto mx-lg-0" style="max-width: 600px;">We do not list unverified manufacturers. Every brand in our network must pass a rigorous 5-point quality assurance protocol before their products are permitted in our catalog.</p>
+          <ul class="list-unstyled mb-0 d-inline-block text-start">
             <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i> ISO 9001 Certification Required</li>
             <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i> Regular Batch Testing</li>
             <li class="d-flex align-items-center gap-3"><i data-lucide="check" class="text-success"></i> Transparent Supply Chains</li>
@@ -578,6 +554,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
