@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories | Building Materials & Construction Supply</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i data-lucide="hard-hat" class="text-primary-custom"></i>
+        <span>Industrial<span class="text-primary-custom">Supply</span></span>
+      </a>
+
+      <!-- Mobile toggles placed carefully before hamburger -->
+      <div class="d-flex align-items-center mobile-menu-btn gap-2">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <i data-lucide="menu" style="pointer-events: none;"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse desktop-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+              <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-icon" id="dir-toggle" aria-label="Toggle RTL/LTR"><i
+              data-lucide="arrow-left-right"></i></button>
+          <button class="action-icon" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon"><i data-lucide="moon"></i></span>
+          </button>
+          <a href="cart.html" class="action-icon text-decoration-none">
+            <i data-lucide="shopping-cart"></i>
+            <span class="cart-badge">0</span>
+          </a>
+          <a href="login.html" class="action-icon text-decoration-none" aria-label="Login"><i
+              data-lucide="user"></i></a>
+          <a href="quote.html" class="btn-primary-custom ms-2">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Industrial<span class="text-primary-custom">Supply</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
+        <li class="nav-item px-3 py-2">
+          <a class="nav-link d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+            href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">
+            More <i data-lucide="chevron-down" class="ms-1"></i>
+          </a>
+          <div class="collapse" id="moreMenu">
+            <ul class="list-unstyled p-0 m-0 py-2 mt-2 text-center">
+              <li><a class="nav-link justify-content-center py-1" href="categories.html">Categories</a></li>
+              <li><a class="nav-link justify-content-center py-1" href="brands.html">Brands</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
+        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
+            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
+              data-lucide="log-in"></i> Login</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
+              data-lucide="user-plus"></i> Register</a></li>
+        
+        <!-- Mobile Toggles -->
+        <li class="nav-item px-3 py-2 border-top mt-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
+            </button>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
+            <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
+              <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+          </div>
+        </li>
+        
+        <!-- Mobile CTA -->
+        <li class="nav-item px-3 py-3 mt-2 text-center">
+          <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Get Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center">
+      <h1 class="display-5 fw-bolder mb-3">Material Categories</h1>
+      <p class="lead text-secondary-subtle">Explore our entire catalog of premium construction materials.</p>
+    </div>
+  </section>
+
+  <!-- 6 Featured Category Cards -->
+  <section class="section-padding pb-0 pt-5">
+    <div class="container">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow border-warning">
+            <img src="assets/images/Cement.png" alt="Cement" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Cement</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow">
+            <img src="assets/images/Steel.png" alt="Steel" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Steel</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow">
+            <img src="assets/images/Bricks.png" alt="Bricks" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Bricks</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow">
+            <img src="assets/images/Tiles.png" alt="Tiles" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Tiles</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow">
+            <img src="assets/images/Glass.png" alt="Glass" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Glass</h6>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <div class="premium-card p-3 hover-glow">
+            <img src="assets/images/Plumbing1.png" alt="Plumbing" class="mx-auto mb-2" style="width: 24px; height: 24px; object-fit: contain; display: block;">
+            <h6 class="fw-bold small mb-0">Plumbing</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Explorer & Filters -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- Top Search & Sort -->
+      <div
+        class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3 bg-white p-3 rounded shadow-sm border">
+        <div class="d-flex align-items-center gap-2 flex-grow-1 w-100">
+          <i data-lucide="search" class="text-muted"></i>
+          <input type="text" id="productSearch" class="form-control border-0 shadow-none"
+            placeholder="Search products, SKUs, materials...">
+        </div>
+        <div class="d-flex align-items-center gap-3 w-100 justify-content-md-end mobile-stack-btns">
+          <span class="text-muted small fw-bold d-none d-md-block">Sort By:</span>
+          <select class="form-select w-auto form-control-custom">
+            <option>Recommended</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Highest Rated</option>
+          </select>
+          <button class="btn btn-outline-dark d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileFilters">
+            <i data-lucide="sliders-horizontal"></i> Filters
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Sidebar Filters (Desktop) -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="bg-white p-4 rounded border">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h5 class="fw-bold mb-0">Filters</h5>
+              <button class="btn btn-link text-danger text-decoration-none p-0 small fw-bold">Clear All</button>
+            </div>
+
+            <div class="mb-4">
+              <h6 class="fw-bold mb-3">Category</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Cement & Concrete</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Steel & Rebar</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Bricks & Blocks</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Tiles & Flooring</label>
+              </div>
+            </div>
+
+            <div class="mb-4 border-top pt-4">
+              <h6 class="fw-bold mb-3">Brands</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">UltraTech</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Tata Tiscon</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Kajaria</label>
+              </div>
+            </div>
+
+            <div class="mb-4 border-top pt-4">
+              <h6 class="fw-bold mb-3">Pricing Tier</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label text-muted">Show Contractor Prices</label>
+              </div>
+            </div>
+
+            <div class="border-top pt-4">
+              <h6 class="fw-bold mb-3">Availability</h6>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" checked>
+                <label class="form-check-label text-muted">In Stock Only</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Filters Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilters">
+          <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold">Filters</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <!-- Same filters as above -->
+            <button class="btn btn-primary-custom w-100 mt-4" data-bs-dismiss="offcanvas">Apply Filters</button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <div class="d-flex justify-content-between align-items-center mb-4 pb-3 border-bottom">
+            <p class="text-muted mb-0"><span class="fw-bold text-dark">8</span> products found</p>
+            <div class="d-flex align-items-center gap-2"></div>
+          </div>
+          <div class="row g-4 justify-content-center" id="productGrid">
+            <!-- (Reusing Product Card structure from index but showing 4 here) -->
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1">Bulk Discount</span>
+                  <img src="assets/images/Premium Portland Cement.png" alt="Premium Portland Cement">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: CEM-43G</span>
+                  <h5 class="fw-bold mb-1 product-title">Premium Portland Cement</h5>
+                  <p class="text-muted small mb-3">UltraTech / Ambuja</p>
+
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$8.50 <span class="fs-6 text-muted fw-normal">/ bag</span></div>
+                    <div class="text-success small fw-bold">Contractor Price: $7.25</div>
+                  </div>
+
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="100"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/TMT Rebar 12mm.png" alt="TMT Rebar 12mm">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: STL-TMT-12</span>
+                  <h5 class="fw-bold mb-1 product-title">TMT Rebar 12mm</h5>
+                  <p class="text-muted small mb-3">Tata Tiscon</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$850.00 <span class="fs-6 text-muted fw-normal">/ ton</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="10"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/AAC Blocks 6.png" alt='AAC Blocks 6"'>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: AAC-6IN</span>
+                  <h5 class="fw-bold mb-1 product-title">AAC Blocks 6"</h5>
+                  <p class="text-muted small mb-3">AeroBuild</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$1.20 <span class="fs-6 text-muted fw-normal">/ block</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="500"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/Porcelain Tiles 60x60.png" alt="Porcelain Tiles 60x60">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: TILE-PRC-60</span>
+                  <h5 class="fw-bold mb-1 product-title">Porcelain Tiles 60x60</h5>
+                  <p class="text-muted small mb-3">Kajaria</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$24.00 <span class="fs-6 text-muted fw-normal">/ sq.m</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="100"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/Standard Portland Cement.png" alt="Standard Portland Cement">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: CEM-33G</span>
+                  <h5 class="fw-bold mb-1 product-title">Standard Portland Cement</h5>
+                  <p class="text-muted small mb-3">Ambuja</p>
+
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$7.50 <span class="fs-6 text-muted fw-normal">/ bag</span></div>
+                  </div>
+
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="50"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/TMT Rebar 10mm.png" alt="TMT Rebar 10mm">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: STL-TMT-10</span>
+                  <h5 class="fw-bold mb-1 product-title">TMT Rebar 10mm</h5>
+                  <p class="text-muted small mb-3">Tata Tiscon</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$750.00 <span class="fs-6 text-muted fw-normal">/ ton</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="10"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/AAC Blocks 4.png" alt='AAC Blocks 4"'>
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: AAC-4IN</span>
+                  <h5 class="fw-bold mb-1 product-title">AAC Blocks 4"</h5>
+                  <p class="text-muted small mb-3">AeroBuild</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$0.80 <span class="fs-6 text-muted fw-normal">/ block</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="1000"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-xl-4 product-item">
+              <div class="premium-card h-100 d-flex flex-column">
+                <div class="card-image" style="height: 200px;">
+                  <img src="assets/images/Ceramic Tiles 30x30.png" alt="Ceramic Tiles 30x30">
+                </div>
+                <div class="p-4 d-flex flex-column flex-grow-1">
+                  <span class="text-muted small mb-1">SKU: TILE-CER-30</span>
+                  <h5 class="fw-bold mb-1 product-title">Ceramic Tiles 30x30</h5>
+                  <p class="text-muted small mb-3">Kajaria</p>
+                  <div class="mb-3">
+                    <div class="fs-4 fw-bold text-dark">$15.00 <span class="fs-6 text-muted fw-normal">/ sq.m</span>
+                    </div>
+                  </div>
+                  <div class="mt-auto d-flex gap-2">
+                    <input type="number" class="form-control form-control-custom text-center" value="200"
+                      style="width: 80px;">
+                    <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                        style="width: 18px;"></i> Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Empty State (Hidden by default) -->
+            <div id="no-products" class="col-12 text-center py-5 d-none">
+              <i data-lucide="search-x" class="text-muted mx-auto mb-3" style="width: 48px; height: 48px;"></i>
+              <h4 class="fw-bold">No products found</h4>
+              <p class="text-muted">Try adjusting your search or filters.</p>
+              <button class="btn-outline-custom mt-2"
+                onclick="document.getElementById('productSearch').value=''; document.getElementById('productSearch').dispatchEvent(new Event('input'));">Clear
+                Search</button>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <nav class="mt-5">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled"><a class="page-link" href="#"><i data-lucide="chevron-left"></i></a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#"><i data-lucide="chevron-right"></i></a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bulk CTA -->
+  <section class="section-padding bg-warning text-dark text-center">
+    <div class="container">
+      <h2 class="display-6 fw-bold mb-4">Need materials in bulk?</h2>
+      <p class="lead mb-4 max-w-2xl mx-auto">Skip the cart and get a custom quotation directly from our supply experts.
+      </p>
+      <a href="contact.html" class="btn btn-dark btn-lg px-5">Request Bulk Quote</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <style>
+    .adaptive-footer {
+      background-color: var(--bg-primary) !important;
+    }
+
+    .adaptive-text {
+      color: var(--text-primary) !important;
+    }
+
+    .adaptive-link {
+      color: var(--text-secondary) !important;
+      transition: color 0.2s;
+    }
+
+    .adaptive-link:hover {
+      color: var(--accent-primary) !important;
+    }
+
+    [data-theme="dark"] .social-icon-img {
+      filter: invert(1) brightness(2);
+    }
+
+    [data-theme="dark"] .social-icon-wrapper {
+      border-color: var(--border-color) !important;
+    }
+  </style>
+  <footer class="adaptive-footer border-top pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <a href="index.html"
+            class="d-flex align-items-center gap-2 text-decoration-none mb-4 fs-4 fw-bold adaptive-text">
+            <i data-lucide="hard-hat" class="text-primary-custom"></i>
+            <span>Industrial<span class="text-primary-custom">Supply</span></span>
+          </a>
+          <p class="mb-4 adaptive-text">The leading platform for professional building materials. Supplying
+            contractors, builders, and developers worldwide with premium products and unbeatable logistics.</p>
+          <div class="d-flex gap-3 align-items-center mt-1">
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img"
+                style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img"
+                style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img"
+                style="width: 20px; height: 20px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/x.svg" alt="X" class="social-icon-img"
+                style="width: 17px; height: 17px; object-fit: contain; display: block;" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Company</h5>
+          <a href="about.html" class="text-decoration-none d-block mb-2 adaptive-link">About Us</a>
+          <a href="services.html" class="text-decoration-none d-block mb-2 adaptive-link">Services</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Careers</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Materials</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Cement</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Steel</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Bricks</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Tiles</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Resources</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Categories</a>
+          <a href="brands.html" class="text-decoration-none d-block mb-2 adaptive-link">Brands</a>
+          <a href="pricing.html" class="text-decoration-none d-block mb-2 adaptive-link">Pricing</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Bulk Enquiry</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Support</h5>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">FAQ</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Returns</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Delivery Logistics</a>
+        </div>
+      </div>
+      <div class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+        style="border-color: var(--border-color) !important;">
+        <p class="mb-0 small adaptive-text">&copy; 2026 Building Materials & Construction Supply Store. All
+          Rights Reserved.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="#" class="small text-decoration-none adaptive-link">Terms</a>
+          <a href="#" class="small text-decoration-none adaptive-link">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      // Advanced Frontend Search & Filter Logic
+      const searchInput = document.getElementById('productSearch');
+      const productItems = document.querySelectorAll('.product-item');
+      const noProducts = document.getElementById('no-products');
+      const filterCheckboxes = document.querySelectorAll('.form-check-input');
+      const clearBtn = document.querySelector('.btn-link.text-danger');
+      const productCountSpan = document.querySelector('.text-muted.mb-0 span.fw-bold');
+
+      function updateFilters() {
+        const term = searchInput ? searchInput.value.toLowerCase() : '';
+        const activeCategories = [];
+        const activeBrands = [];
+
+        filterCheckboxes.forEach(cb => {
+          if (cb.checked) {
+            const label = cb.nextElementSibling.innerText.trim();
+            if (['Cement & Concrete', 'Steel & Rebar', 'Bricks & Blocks', 'Tiles & Flooring'].includes(label)) {
+              activeCategories.push(label);
+            } else if (['UltraTech', 'Tata Tiscon', 'Kajaria'].includes(label)) {
+              activeBrands.push(label);
+            }
+          }
+        });
+
+        let visibleCount = 0;
+
+        productItems.forEach(item => {
+          const text = item.innerText.toLowerCase();
+          const title = item.querySelector('.product-title').innerText.toLowerCase();
+
+          let itemCategory = "";
+          if (text.includes("cement")) itemCategory = "Cement & Concrete";
+          else if (text.includes("rebar") || text.includes("steel")) itemCategory = "Steel & Rebar";
+          else if (text.includes("blocks") || text.includes("bricks") || text.includes("aac")) itemCategory = "Bricks & Blocks";
+          else if (text.includes("tiles")) itemCategory = "Tiles & Flooring";
+
+          let itemBrand = "";
+          if (text.includes("ultratech")) itemBrand = "UltraTech";
+          else if (text.includes("ambuja") && !text.includes("ultratech")) itemBrand = "UltraTech";
+          if (text.includes("tata tiscon")) itemBrand = "Tata Tiscon";
+          if (text.includes("kajaria")) itemBrand = "Kajaria";
+          if (text.includes("ultratech / ambuja")) itemBrand = "UltraTech";
+
+          const searchMatch = title.includes(term);
+          const categoryMatch = activeCategories.length === 0 || activeCategories.includes(itemCategory);
+          const brandMatch = activeBrands.length === 0 || activeBrands.includes(itemBrand);
+
+          if (searchMatch && categoryMatch && brandMatch) {
+            item.style.display = 'block';
+            visibleCount++;
+          } else {
+            item.style.display = 'none';
+          }
+        });
+
+        if (productCountSpan) productCountSpan.innerText = visibleCount;
+
+        if (noProducts) {
+          if (visibleCount === 0) {
+            noProducts.classList.remove('d-none');
+          } else {
+            noProducts.classList.add('d-none');
+          }
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', updateFilters);
+      }
+
+      filterCheckboxes.forEach(cb => {
+        cb.addEventListener('change', updateFilters);
+      });
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          filterCheckboxes.forEach(cb => cb.checked = false);
+          if (searchInput) searchInput.value = '';
+          updateFilters();
+        });
+      }
+
+      updateFilters();
+    });
+  </script>
+</body>
+
+</html>

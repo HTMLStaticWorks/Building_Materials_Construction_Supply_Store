@@ -1,0 +1,455 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Building Materials & Construction Supply</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i data-lucide="hard-hat" class="text-primary-custom"></i>
+        <span>Industrial<span class="text-primary-custom">Supply</span></span>
+      </a>
+
+      <!-- Mobile toggles placed carefully before hamburger -->
+      <div class="d-flex align-items-center mobile-menu-btn gap-2">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <i data-lucide="menu" style="pointer-events: none;"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse desktop-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+              <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-icon" id="dir-toggle" aria-label="Toggle RTL/LTR"><i
+              data-lucide="arrow-left-right"></i></button>
+          <button class="action-icon" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon"><i data-lucide="moon"></i></span>
+          </button>
+          <a href="cart.html" class="action-icon text-decoration-none">
+            <i data-lucide="shopping-cart"></i>
+            <span class="cart-badge">0</span>
+          </a>
+          <a href="login.html" class="action-icon text-decoration-none" aria-label="Login"><i
+              data-lucide="user"></i></a>
+          <a href="quote.html" class="btn-primary-custom ms-2">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Industrial<span class="text-primary-custom">Supply</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
+        <li class="nav-item px-3 py-2">
+          <a class="nav-link d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+            href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">
+            More <i data-lucide="chevron-down" class="ms-1"></i>
+          </a>
+          <div class="collapse" id="moreMenu">
+            <ul class="list-unstyled p-0 m-0 py-2 mt-2 text-center">
+              <li><a class="nav-link justify-content-center py-1" href="categories.html">Categories</a></li>
+              <li><a class="nav-link justify-content-center py-1" href="brands.html">Brands</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
+        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
+            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
+              data-lucide="log-in"></i> Login</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
+              data-lucide="user-plus"></i> Register</a></li>
+        
+        <!-- Mobile Toggles -->
+        <li class="nav-item px-3 py-2 border-top mt-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
+            </button>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
+            <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
+              <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+          </div>
+        </li>
+        
+        <!-- Mobile CTA -->
+        <li class="nav-item px-3 py-3 mt-2 text-center">
+          <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Get Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Hero -->
+  <section class="section-padding bg-dark text-white blueprint-bg text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bolder mb-3 text-white">Let's Build Together</h1>
+      <p class="lead text-secondary-subtle max-w-2xl mx-auto">Get in touch with our procurement specialists, request bulk quotations, or track an existing delivery.</p>
+    </div>
+  </section>
+
+  <!-- Contact Information (4 cards) -->
+  <section class="section-padding bg-light">
+    <div class="container mt-n5">
+      <div class="row g-4 position-relative z-1">
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 text-center h-100 border-top border-4 border-primary shadow-sm bg-white">
+            <i data-lucide="phone" class="text-primary-custom mb-3 mx-auto" style="width: 32px; height: 32px;"></i>
+            <h5 class="fw-bold">Call Us</h5>
+            <p class="text-muted small mb-3">Mon-Fri, 7am - 6pm</p>
+            <a href="tel:1-800-SUPPLY" class="fw-bold fs-5 text-dark text-decoration-none hover-color transition">1-800-SUPPLY-CO</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 text-center h-100 border-top border-4 border-success shadow-sm bg-white">
+            <i data-lucide="mail" class="text-success mb-3 mx-auto" style="width: 32px; height: 32px;"></i>
+            <h5 class="fw-bold">Email Us</h5>
+            <p class="text-muted small mb-3">General Enquiries</p>
+            <a href="mailto:info@buildsupply.com" class="fw-bold text-dark text-decoration-none hover-color transition">info@buildsupply.com</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 text-center h-100 border-top border-4 border-warning shadow-sm bg-white">
+            <i data-lucide="boxes" class="text-warning mb-3 mx-auto" style="width: 32px; height: 32px;"></i>
+            <h5 class="fw-bold">Bulk Orders</h5>
+            <p class="text-muted small mb-3">Volume Quotations</p>
+            <a href="mailto:bulk@buildsupply.com" class="fw-bold text-dark text-decoration-none hover-color transition">bulk@buildsupply.com</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card p-4 text-center h-100 border-top border-4 border-info shadow-sm bg-white">
+            <i data-lucide="hard-hat" class="text-info mb-3 mx-auto" style="width: 32px; height: 32px;"></i>
+            <h5 class="fw-bold">Project Support</h5>
+            <p class="text-muted small mb-3">Technical Assistance</p>
+            <a href="mailto:engineer@buildsupply.com" class="fw-bold text-dark text-decoration-none hover-color transition">engineer@buildsupply.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bulk Enquiry & Map -->
+  <section class="section-padding border-bottom">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Bulk Enquiry Form -->
+        <div class="col-lg-6">
+          <h2 class="display-6 fw-bold mb-4">Send a Bulk Enquiry</h2>
+          <p class="text-muted mb-4">Need materials for a large project? Fill out the form below and our procurement specialists will contact you with a custom quotation within 24 hours.</p>
+          
+          <form class="bg-white p-4 p-md-5 rounded-4 shadow-sm border">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-custom" placeholder="Full Name">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-custom" placeholder="Company Name">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control form-control-custom" placeholder="Email Address">
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control form-control-custom" placeholder="Phone Number">
+              </div>
+              <div class="col-md-6">
+                <select class="form-select form-control-custom">
+                  <option selected>Project Type</option>
+                  <option>Residential</option>
+                  <option>Commercial</option>
+                  <option>Industrial</option>
+                  <option>Renovation</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <select class="form-select form-control-custom">
+                  <option selected>Material Category</option>
+                  <option>Cement & Concrete</option>
+                  <option>Steel & Rebar</option>
+                  <option>Bricks & Blocks</option>
+                  <option>Multiple</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control form-control-custom" placeholder="Estimated Quantity">
+              </div>
+              <div class="col-md-6">
+                <input type="date" class="form-control form-control-custom" placeholder="Required Delivery Date">
+              </div>
+              <div class="col-12">
+                <input type="text" class="form-control form-control-custom" placeholder="Delivery Location / Site Address">
+              </div>
+              <div class="col-12">
+                <textarea class="form-control form-control-custom" rows="3" placeholder="Additional Requirements..."></textarea>
+              </div>
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn-primary-custom w-100" onclick="event.preventDefault(); alert('Enquiry Submitted!');">Submit Bulk Enquiry</button>
+              </div>
+              <div class="col-12 mt-4 d-flex justify-content-center">
+                <div class="d-flex gap-3 align-items-center">
+                  <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+                    <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+                    <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+                    <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img" style="width: 20px; height: 20px; object-fit: contain; display: block;" />
+                  </a>
+                  <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+                    <img src="assets/images/social/x.svg" alt="X" class="social-icon-img" style="width: 17px; height: 17px; object-fit: contain; display: block;" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Location, Hours, Support -->
+        <div class="col-lg-6">
+          <div class="bg-light p-4 rounded-4 border mb-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i data-lucide="map-pin" class="text-primary-custom" style="animation: bounce 2s infinite;"></i>
+              <h5 class="fw-bold mb-0">Global Headquarters</h5>
+            </div>
+            <p class="text-muted mb-0">1000 Industrial Supply Way<br>Warehouse District<br>Metropolis, NY 10001</p>
+          </div>
+          
+          <div class="bg-light p-4 rounded-4 border mb-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <i data-lucide="clock" class="text-primary-custom"></i>
+              <h5 class="fw-bold mb-0">Business Hours</h5>
+            </div>
+            <ul class="list-unstyled mb-0 text-muted">
+              <li class="d-flex justify-content-between mb-2"><span>Monday - Friday</span> <span>7:00 AM - 6:00 PM</span></li>
+              <li class="d-flex justify-content-between mb-2"><span>Saturday</span> <span>8:00 AM - 2:00 PM</span></li>
+              <li class="d-flex justify-content-between"><span>Sunday</span> <span class="badge bg-danger">Closed</span></li>
+            </ul>
+          </div>
+          
+          <!-- Interactive Map -->
+          <div class="rounded-4 overflow-hidden shadow-sm border" style="height: 300px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <style>
+            @keyframes pulse {
+              0% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7); }
+              70% { box-shadow: 0 0 0 10px rgba(5, 150, 105, 0); }
+              100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+            }
+            @keyframes bounce {
+              0%, 100% { transform: translateY(0); }
+              50% { transform: translateY(-5px); }
+            }
+            @keyframes drive {
+              0% { transform: translateX(50px); opacity: 0; }
+              10% { opacity: 1; }
+              90% { opacity: 1; }
+              100% { transform: translateX(-150px); opacity: 0; }
+            }
+          </style>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (reusing format from index) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Support FAQ</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="contactFaq">
+            <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How long does it take to process a bulk enquiry?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted">We aim to provide a detailed, custom quotation within 24 business hours of receiving your form.</div>
+              </div>
+            </div>
+            <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Who do I contact for an issue with my delivery?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted">Please call our main support line at 1-800-SUPPLY-CO and select Option 2 for Logistics and Dispatch.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq3">
+                  What are your standard business hours?
+                </button>
+              </h2>
+              <div id="contactFaq3" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted">Our support team is available Monday through Friday from 7:00 AM to 6:00 PM, and Saturday from 8:00 AM to 2:00 PM.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq4">
+                  Where is your global headquarters located?
+                </button>
+              </h2>
+              <div id="contactFaq4" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted">Our global headquarters is located at 1000 Industrial Supply Way, Metropolis, NY 10001.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-white border-0 shadow-sm mb-3 rounded-4 overflow-hidden">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#contactFaq5">
+                  Can I track my delivery online?
+                </button>
+              </h2>
+              <div id="contactFaq5" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                <div class="accordion-body text-muted">Yes, once your order is dispatched, you will receive a tracking link via email to monitor your delivery status in real-time.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .adaptive-footer { background-color: var(--bg-primary) !important; }
+    .adaptive-text { color: var(--text-primary) !important; }
+    .adaptive-link { color: var(--text-secondary) !important; transition: color 0.2s; }
+    .adaptive-link:hover { color: var(--accent-primary) !important; }
+    /* removed invert to keep original icon colors in dark mode */
+    [data-theme="dark"] .social-icon-wrapper { border-color: var(--border-color) !important; }
+  </style>
+  <footer class="adaptive-footer border-top pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <a href="index.html"
+            class="d-flex align-items-center gap-2 text-decoration-none mb-4 fs-4 fw-bold adaptive-text">
+            <i data-lucide="hard-hat" class="text-primary-custom"></i>
+            <span>Industrial<span class="text-primary-custom">Supply</span></span>
+          </a>
+          <p class="mb-4 adaptive-text">The leading platform for professional building materials. Supplying
+            contractors, builders, and developers worldwide with premium products and unbeatable logistics.</p>
+          <div class="d-flex gap-3 align-items-center mt-1">
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img" style="width: 20px; height: 20px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/x.svg" alt="X" class="social-icon-img" style="width: 17px; height: 17px; object-fit: contain; display: block;" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Company</h5>
+          <a href="about.html" class="text-decoration-none d-block mb-2 adaptive-link">About Us</a>
+          <a href="services.html" class="text-decoration-none d-block mb-2 adaptive-link">Services</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Careers</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Materials</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Cement</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Steel</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Bricks</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Tiles</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Resources</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Categories</a>
+          <a href="brands.html" class="text-decoration-none d-block mb-2 adaptive-link">Brands</a>
+          <a href="pricing.html" class="text-decoration-none d-block mb-2 adaptive-link">Pricing</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Bulk Enquiry</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Support</h5>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">FAQ</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Returns</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Delivery Logistics</a>
+        </div>
+      </div>
+      <div
+        class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+        <p class="mb-0 small adaptive-text">&copy; 2026 Building Materials & Construction Supply Store. All
+          Rights Reserved.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="#" class="small text-decoration-none adaptive-link">Terms</a>
+          <a href="#" class="small text-decoration-none adaptive-link">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
+

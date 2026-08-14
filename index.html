@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Materials & Construction Supply Store | Premium Supplies</title>
+  <meta name="description"
+    content="Professional construction materials, contractor pricing, trusted brands, and reliable bulk supply.">
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GSAP for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- CountUp.js for stats -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i data-lucide="hard-hat" class="text-primary-custom"></i>
+        <span>Industrial<span class="text-primary-custom">Supply</span></span>
+      </a>
+
+      <!-- Mobile toggles placed carefully before hamburger -->
+      <div class="d-flex align-items-center mobile-menu-btn gap-2">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu">
+          <i data-lucide="menu" style="pointer-events: none;"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse desktop-nav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+              <li><a class="dropdown-item" href="brands.html">Brands</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="action-icon" id="dir-toggle" aria-label="Toggle RTL/LTR"><i
+              data-lucide="arrow-left-right"></i></button>
+          <button class="action-icon" id="theme-toggle" aria-label="Toggle theme">
+            <span id="theme-icon"><i data-lucide="moon"></i></span>
+          </button>
+          <a href="cart.html" class="action-icon text-decoration-none">
+            <i data-lucide="shopping-cart"></i>
+            <span class="cart-badge">0</span>
+          </a>
+          <a href="login.html" class="action-icon text-decoration-none" aria-label="Login"><i
+              data-lucide="user"></i></a>
+          <a href="quote.html" class="btn-primary-custom ms-2">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Menu -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+    <div class="offcanvas-header border-bottom border-secondary">
+      <h5 class="offcanvas-title fw-bold" id="mobileMenuLabel">Industrial<span class="text-primary-custom">Supply</span>
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+      <ul class="navbar-nav">
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="index.html">Home</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link active text-center" href="home-2.html">Home 2</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="about.html">About</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="services.html">Services</a></li>
+        <li class="nav-item px-3 py-2">
+          <a class="nav-link d-flex justify-content-center align-items-center" data-bs-toggle="collapse"
+            href="#moreMenu" role="button" aria-expanded="false" aria-controls="moreMenu">
+            More <i data-lucide="chevron-down" class="ms-1"></i>
+          </a>
+          <div class="collapse" id="moreMenu">
+            <ul class="list-unstyled p-0 m-0 py-2 mt-2 text-center">
+              <li><a class="nav-link justify-content-center py-1" href="categories.html">Categories</a></li>
+              <li><a class="nav-link justify-content-center py-1" href="brands.html">Brands</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
+        <li class="nav-item px-3 py-2 border-top mt-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2"
+            href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="login.html"><i
+              data-lucide="log-in"></i> Login</a></li>
+        <li class="nav-item px-3 py-2"><a class="nav-link d-flex justify-content-center align-items-center gap-2" href="register.html"><i
+              data-lucide="user-plus"></i> Register</a></li>
+        
+        <!-- Mobile Toggles -->
+        <li class="nav-item px-3 py-2 border-top mt-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">Theme</span>
+            <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
+              <span id="theme-icon-mobile" style="pointer-events: none;"><i data-lucide="moon"></i></span>
+            </button>
+          </div>
+        </li>
+        <li class="nav-item px-3 py-2">
+          <div class="d-flex align-items-center justify-content-center gap-4">
+            <span class="nav-link p-0 d-flex align-items-center gap-2">RTL Layout</span>
+            <button class="action-icon" id="dir-toggle-mobile" aria-label="Toggle layout direction">
+              <i data-lucide="arrow-left-right" style="pointer-events: none;"></i>
+            </button>
+          </div>
+        </li>
+        
+        <!-- Mobile CTA -->
+        <li class="nav-item px-3 py-3 mt-2 text-center">
+          <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Get Quote</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="position-relative bg-dark text-white blueprint-bg overflow-hidden pt-5 pb-5 pt-lg-0 pb-lg-0"
+    style="min-height: 100vh; display: flex; align-items: center;">
+    <div class="container position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 hero-content text-center-mobile">
+          <span
+            class="badge text-bg-warning rounded-pill px-3 py-2 mb-3 fw-semibold text-uppercase letter-spacing-1">Premium
+            B2B Supply</span>
+          <h1 class="display-4 fw-bolder mb-4 text-white lh-sm">Build Stronger.<br>Build Smarter.<br><span
+              class="text-primary-custom">Source Everything.</span></h1>
+          <p class="lead mb-5 text-secondary-subtle">Professional construction materials, contractor pricing, trusted
+            brands, and reliable bulk supply.</p>
+
+          <div class="d-flex flex-wrap gap-3 mobile-stack-btns">
+            <a href="categories.html" class="btn-primary-custom btn-lg">Shop Materials <i
+                data-lucide="arrow-right"></i></a>
+            <a href="contact.html" class="btn-outline-custom border-white text-white btn-lg">Request Bulk Quote</a>
+          </div>
+
+          <div
+            class="d-flex gap-4 mt-5 pt-3 border-top border-secondary align-items-center justify-content-center justify-content-lg-start">
+            <div class="d-flex align-items-center gap-2">
+              <i data-lucide="check-circle-2" class="text-primary-custom"></i>
+              <span class="small">Verified Brands</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i data-lucide="truck" class="text-primary-custom"></i>
+              <span class="small">Fast Supply</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 position-relative hero-visual">
+          <div class="position-relative" style="height: 500px; perspective: 1000px;">
+            <!-- Placeholder for construction scene -->
+            <img src="assets/images/home1-hero.png" alt="Construction Materials"
+              class="img-fluid rounded-4 shadow-lg w-100 h-100 object-fit-cover">
+
+            <!-- Floating cards -->
+            <div class="position-absolute bg-white text-dark p-3 rounded shadow-lg"
+              style="top: 10%; right: -5%; transform: translateZ(50px);">
+              <div class="d-flex align-items-center gap-2">
+                <i data-lucide="tag" class="text-primary-custom"></i>
+                <span class="fw-bold">Bulk Pricing</span>
+              </div>
+            </div>
+
+            <div class="position-absolute bg-dark text-white p-3 rounded shadow-lg border border-secondary"
+              style="bottom: 15%; left: -10%; transform: translateZ(80px);">
+              <div class="d-flex align-items-center gap-2">
+                <i data-lucide="shield-check" class="text-success"></i>
+                <span class="fw-bold">Contractor Ready</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Material Categories -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-end mb-5">
+        <div>
+          <h2 class="display-5 fw-bold mb-2">Material Categories</h2>
+          <p class="lead text-muted mb-0">Browse our comprehensive catalog of construction materials.</p>
+        </div>
+        <a href="categories.html" class="btn-outline-custom d-none d-md-inline-flex">View All <i
+            data-lucide="arrow-right"></i></a>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Cement_Concrete.png" alt="Cement & Concrete">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="box"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Cement & Concrete</h4>
+                </div>
+                <p class="text-muted mb-3">High-grade portland cement and ready-mix concrete solutions.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">124 Products</span>
+                  <i data-lucide="arrow-right"
+                    class="text-muted transition group-hover:text-primary-custom group-hover:translate-x-1"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Steel_Reinforcement.png" alt="Steel & Reinforcement">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="align-justify"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Steel & Reinforcement</h4>
+                </div>
+                <p class="text-muted mb-3">TMT bars, beams, and structural steel components.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">86 Products</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Bricks_Blocks.png" alt="Bricks & Blocks">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="layers"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Bricks & Blocks</h4>
+                </div>
+                <p class="text-muted mb-3">AAC blocks, red bricks, and specialized masonry units.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">42 Products</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Tiles_Flooring.png" alt="Tiles & Flooring">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="grid"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Tiles & Flooring</h4>
+                </div>
+                <p class="text-muted mb-3">Porcelain, ceramic, and natural stone flooring options.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">150+ Products</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Glass_Architectural.png" alt="Glass & Architectural">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="panels-top-left"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Glass & Architectural</h4>
+                </div>
+                <p class="text-muted mb-3">Tempered glass, facades, and premium architectural panels.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">68 Products</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="col-md-6 col-lg-4">
+          <a href="categories.html" class="text-decoration-none d-block">
+            <div class="premium-card position-relative group">
+              <div class="card-image" style="height: 240px;">
+                <img src="assets/images/Plumbing.png" alt="Plumbing">
+              </div>
+              <div class="p-4 bg-card">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="bg-primary-custom p-2 rounded flex-shrink-0">
+                    <i data-lucide="droplets"></i>
+                  </div>
+                  <h4 class="mb-0 fw-bold text-dark">Plumbing</h4>
+                </div>
+                <p class="text-muted mb-3">PVC pipes, fittings, and comprehensive plumbing supplies.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto">
+                  <span class="small fw-bold text-primary-custom">94 Products</span>
+                  <i data-lucide="arrow-right" class="text-muted transition"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="text-center mt-5 d-block d-md-none">
+        <a href="categories.html" class="btn-outline-custom w-100">View All Categories <i
+            data-lucide="arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contractor Pricing Section -->
+  <section class="section-padding bg-dark text-white blueprint-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0 text-center-mobile">
+          <span class="text-primary-custom fw-bold letter-spacing-1 text-uppercase mb-2 d-block">B2B Procurement</span>
+          <h2 class="display-5 fw-bold mb-4 text-white">Better Rates for Bigger Projects</h2>
+          <p class="lead text-secondary-subtle mb-4">Join our contractor network to unlock bulk volume pricing,
+            scheduled deliveries, and dedicated account management for your construction projects.</p>
+          <ul class="list-unstyled mb-5">
+            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i> <span>Up
+                to 25% off standard retail prices</span></li>
+            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
+              <span>Dedicated site delivery logistics</span></li>
+            <li class="d-flex align-items-center gap-3 mb-3"><i data-lucide="check" class="text-success"></i>
+              <span>Custom project quotations</span></li>
+          </ul>
+          <div class="mobile-stack-btns">
+            <a href="pricing.html" class="btn-primary-custom btn-lg">Request Contractor Pricing</a>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <!-- Quantity Estimator Tool -->
+          <div class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg border-top border-4 border-warning">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="bg-primary-custom p-2 rounded text-white">
+                <i data-lucide="calculator"></i>
+              </div>
+              <h3 class="mb-0 fw-bold">Project Estimator</h3>
+            </div>
+
+            <form id="estimator-form">
+              <div class="mb-3">
+                <label class="form-label fw-bold">Material Type</label>
+                <select class="form-select form-control-custom">
+                  <option>Concrete (Volume)</option>
+                  <option>Flooring (Area)</option>
+                  <option>Brickwork (Area)</option>
+                </select>
+              </div>
+              <div class="row g-3 mb-3">
+                <div class="col-6">
+                  <label class="form-label fw-bold">Area (sq m)</label>
+                  <input type="number" class="form-control form-control-custom" id="est-area" placeholder="e.g. 100">
+                </div>
+                <div class="col-6">
+                  <label class="form-label fw-bold">Depth/Thickness (m)</label>
+                  <input type="number" class="form-control form-control-custom" id="est-depth" placeholder="e.g. 0.15">
+                </div>
+              </div>
+              <div id="est-result" class="mb-4"></div>
+
+              <div class="d-grid gap-2 mobile-stack-btns">
+                <button type="button" class="btn-primary-custom w-100 add-to-cart-btn">Add Estimate to Cart</button>
+                <button type="button" class="btn-outline-custom w-100">Request Bulk Quote</button>
+              </div>
+              <p class="small text-muted mt-3 text-center mb-0">* Estimates are indicative and should be verified
+                against exact project specifications.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Featured Products</h2>
+        <p class="lead text-muted">High-quality materials frequently requested for major projects.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1">Bulk Discount</span>
+              <img src="assets/images/Premium Portland Cement.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="Portland Cement">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: CEM-43G</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">Premium Portland Cement</h5>
+              <p class="text-muted small mb-3">UltraTech / Ambuja</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$8.50 <span class="fs-6 text-muted fw-normal">/ bag</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $7.25 / bag</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="100"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <img src="assets/images/TMT Reinforcement Steel 12mm.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="TMT Steel">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: STL-TMT-12</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star-half" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">TMT Reinforcement Steel 12mm</h5>
+              <p class="text-muted small mb-3">Tata Tiscon</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$850.00 <span class="fs-6 text-muted fw-normal">/ ton</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $790.00 / ton</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="10"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <img src="assets/images/AAC Blocks 6.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="AAC Blocks">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: AAC-6IN</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">AAC Blocks 6" Thickness</h5>
+              <p class="text-muted small mb-3">AeroBuild</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$1.20 <span class="fs-6 text-muted fw-normal">/ block</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $0.95 / block</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="500"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <img src="assets/images/Porcelain Floor Tiles 60x60.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="Porcelain Tiles">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: TILE-PRC-60</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">Porcelain Floor Tiles 60x60</h5>
+              <p class="text-muted small mb-3">Kajaria</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$24.00 <span class="fs-6 text-muted fw-normal">/ sq.m</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $19.50 / sq.m</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="100"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <img src="assets/images/Tempered Architectural Glass 10mm.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="Architectural Glass">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: GLS-TMP-10</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star-half" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">Tempered Architectural Glass 10mm</h5>
+              <p class="text-muted small mb-3">Saint-Gobain</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$45.00 <span class="fs-6 text-muted fw-normal">/ sq.m</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $38.00 / sq.m</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="20"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-sm-6 col-lg-4">
+          <div class="premium-card h-100 d-flex flex-column">
+            <div class="card-image" style="height: 220px;">
+              <img src="assets/images/PVC Construction Pipe 4.png" class="w-100 h-100" style="object-fit: contain;"
+                alt="PVC Pipe">
+            </div>
+            <div class="p-4 d-flex flex-column flex-grow-1">
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <span class="text-muted small">SKU: PVC-4IN-SCH40</span>
+                <div class="text-warning d-flex">
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                  <i data-lucide="star" class="fill-warning" style="width:14px;"></i>
+                </div>
+              </div>
+              <h5 class="fw-bold mb-1">PVC Construction Pipe 4"</h5>
+              <p class="text-muted small mb-3">Finolex</p>
+
+              <div class="mb-3">
+                <div class="fs-4 fw-bold text-dark">$12.50 <span class="fs-6 text-muted fw-normal">/ unit</span></div>
+                <div class="text-success small fw-bold">Contractor Price: $9.80 / unit</div>
+              </div>
+
+              <div class="mt-auto d-flex gap-2">
+                <input type="number" class="form-control form-control-custom text-center" value="50"
+                  style="width: 80px;">
+                <button class="btn-primary-custom flex-grow-1 add-to-cart-btn"><i data-lucide="shopping-cart"
+                    style="width: 18px;"></i> Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Why Choose Us</h2>
+        <p class="lead text-muted">The preferred supply partner for top contractors.</p>
+      </div>
+      <div class="row g-0">
+        <!-- 4 cards -->
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card text-center hover-glow h-100 overflow-hidden d-flex flex-column border-0 rounded-0">
+            <img src="assets/images/Verified Quality.png" alt="Verified Quality" class="img-fluid w-100" style="height: 240px; object-fit: cover;">
+            <div class="p-4 bg-white d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold">Verified Quality</h5>
+              <p class="text-muted small mb-0">All materials meet strict industrial standards.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card text-center hover-glow h-100 overflow-hidden d-flex flex-column border-0 rounded-0">
+            <img src="assets/images/Competitive Pricing.png" alt="Competitive Pricing" class="img-fluid w-100" style="height: 240px; object-fit: cover;">
+            <div class="p-4 bg-white d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold">Competitive Pricing</h5>
+              <p class="text-muted small mb-0">Unbeatable bulk rates for contractors.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card text-center hover-glow h-100 overflow-hidden d-flex flex-column border-0 rounded-0">
+            <img src="assets/images/Reliable Bulk Supply.png" alt="Reliable Bulk Supply" class="img-fluid w-100" style="height: 240px; object-fit: cover;">
+            <div class="p-4 bg-white d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold">Reliable Bulk Supply</h5>
+              <p class="text-muted small mb-0">Consistent availability for major projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="premium-card text-center hover-glow h-100 overflow-hidden d-flex flex-column border-0 rounded-0">
+            <img src="assets/images/Fast Delivery.png" alt="Fast Delivery" class="img-fluid w-100" style="height: 240px; object-fit: cover;">
+            <div class="p-4 bg-white d-flex flex-column flex-grow-1">
+              <h5 class="fw-bold">Fast Delivery</h5>
+              <p class="text-muted small mb-0">Scheduled logistics right to your site.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands Section -->
+  <section class="section-padding">
+    <div class="container text-center">
+      <h2 class="display-6 fw-bold mb-5">Trusted by Industry Leaders</h2>
+      <div class="row g-0 align-items-center justify-content-center rounded shadow-sm overflow-hidden mx-auto" style="max-width: 1100px; background-color: #ffffff !important; border: 1px solid #e2e8f0;">
+        <div class="col-6 col-md-2" style="border-right: 1px solid #e2e8f0;">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand1.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 1">
+          </div>
+        </div>
+        <div class="col-6 col-md-2" style="border-right: 1px solid #e2e8f0;">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand2.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 2">
+          </div>
+        </div>
+        <div class="col-6 col-md-2" style="border-right: 1px solid #e2e8f0;">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand3.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 3">
+          </div>
+        </div>
+        <div class="col-6 col-md-2" style="border-right: 1px solid #e2e8f0;">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand4.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 4">
+          </div>
+        </div>
+        <div class="col-6 col-md-2" style="border-right: 1px solid #e2e8f0;">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand5.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 5">
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <div class="grayscale hover-color transition d-flex align-items-center justify-content-center" style="height: 120px; background-color: #ffffff !important;">
+            <img src="assets/images/Brand6.png" class="img-fluid p-3" style="max-height: 100%; object-fit: contain;" alt="Brand 6">
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <a href="brands.html" class="btn-outline-custom">View All Brands</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Solutions -->
+  <section class="section-padding bg-light border-top">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Project Solutions</h2>
+        <p class="lead text-muted">Specialized material supply for every scale.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="premium-card p-4 d-flex align-items-center gap-4">
+            <img src="assets/images/Residential Construction.png"
+              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Residential Construction">
+            <div>
+              <h5 class="fw-bold">Residential Construction</h5>
+              <p class="text-muted small">Complete material kits for home builders.</p>
+              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="premium-card p-4 d-flex align-items-center gap-4">
+            <img src="assets/images/Commercial Projects.png"
+              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Commercial Projects">
+            <div>
+              <h5 class="fw-bold">Commercial Projects</h5>
+              <p class="text-muted small">High-volume supply for major developments.</p>
+              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="premium-card p-4 d-flex align-items-center gap-4">
+            <img src="assets/images/Industrial Construction.png"
+              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Industrial Construction">
+            <div>
+              <h5 class="fw-bold">Industrial Construction</h5>
+              <p class="text-muted small">Heavy-duty structural materials and steel.</p>
+              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="premium-card p-4 d-flex align-items-center gap-4">
+            <img src="assets/images/Renovation & Interior.png"
+              class="rounded-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Renovation & Interior">
+            <div>
+              <h5 class="fw-bold">Renovation & Interior</h5>
+              <p class="text-muted small">Premium finishes, tiles, and fixtures.</p>
+              <a href="services.html" class="text-primary-custom text-decoration-none fw-bold small">Learn More <i
+                  data-lucide="arrow-right" style="width: 14px;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">How It Works</h2>
+        <p class="lead text-muted">Streamlined procurement in 6 simple steps.</p>
+      </div>
+      <div class="row g-4 text-center position-relative">
+        <!-- Blueprint timeline line -->
+        <div class="d-none d-lg-block position-absolute top-50 start-0 w-100 border-top border-2 border-warning z-0"
+          style="transform: translateY(-50%);"></div>
+
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_1_select.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Select">
+          <h6 class="fw-bold">1. Select</h6>
+        </div>
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_2_calculate.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Calculate">
+          <h6 class="fw-bold">2. Calculate</h6>
+        </div>
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_3_cart.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Add to Cart">
+          <h6 class="fw-bold">3. Add to Cart</h6>
+        </div>
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_4_quote.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Quote">
+          <h6 class="fw-bold">4. Quote</h6>
+        </div>
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_5_delivery.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Delivery">
+          <h6 class="fw-bold">5. Delivery</h6>
+        </div>
+        <div class="col-6 col-lg-2 position-relative z-1">
+          <img src="assets/images/step_6_receive.jpg" class="rounded-circle shadow-sm border border-secondary mx-auto mb-3" style="width: 60px; height: 60px; object-fit: cover; display: block;" alt="Receive">
+          <h6 class="fw-bold">6. Receive</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h2 class="display-6 fw-bold mb-5 text-center">Client Testimonials</h2>
+          <div class="row g-4">
+            <!-- 4 Testimonials -->
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"The bulk pricing on TMT steel was unmatched. Fast delivery right to
+                  our commercial site."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="David R.">
+                  <div>
+                    <h6 class="fw-bold mb-0">David R.</h6>
+                    <span class="small text-muted">Contractor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"Their estimator tool saved us so much time. Accurate and perfectly
+                  integrated into the cart."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="Sarah K.">
+                  <div>
+                    <h6 class="fw-bold mb-0">Sarah K.</h6>
+                    <span class="small text-muted">Architect</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"Excellent selection of premium tiles for our hotel renovation
+                  project."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="Michael T.">
+                  <div>
+                    <h6 class="fw-bold mb-0">Michael T.</h6>
+                    <span class="small text-muted">Procurement Mgr</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="premium-card p-4 bg-white text-dark h-100 shadow-sm border-0">
+                <div class="text-warning mb-2">
+                  <i data-lucide="star" class="fill-warning" style="width:16px;"></i><i data-lucide="star"
+                    class="fill-warning" style="width:16px;"></i><i data-lucide="star" class="fill-warning"
+                    style="width:16px;"></i><i data-lucide="star" class="fill-warning" style="width:16px;"></i><i
+                    data-lucide="star" class="fill-warning" style="width:16px;"></i>
+                </div>
+                <p class="small text-muted mb-4">"Reliable supply every single time. They understand the demands of real
+                  construction."</p>
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                  <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="James L.">
+                  <div>
+                    <h6 class="fw-bold mb-0">James L.</h6>
+                    <span class="small text-muted">Builder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <style>
+    .adaptive-footer { background-color: var(--bg-primary) !important; }
+    .adaptive-text { color: var(--text-primary) !important; }
+    .adaptive-link { color: var(--text-secondary) !important; transition: color 0.2s; }
+    .adaptive-link:hover { color: var(--accent-primary) !important; }
+    /* removed invert to keep original icon colors in dark mode */
+    [data-theme="dark"] .social-icon-wrapper { border-color: var(--border-color) !important; }
+  </style>
+  <footer class="adaptive-footer border-top pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4 mb-5">
+        <div class="col-lg-4 pe-lg-5">
+          <a href="index.html"
+            class="d-flex align-items-center gap-2 text-decoration-none mb-4 fs-4 fw-bold adaptive-text">
+            <i data-lucide="hard-hat" class="text-primary-custom"></i>
+            <span>Industrial<span class="text-primary-custom">Supply</span></span>
+          </a>
+          <p class="mb-4 adaptive-text">The leading platform for professional building materials. Supplying
+            contractors, builders, and developers worldwide with premium products and unbeatable logistics.</p>
+          <div class="d-flex gap-3 align-items-center mt-1">
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img" style="width: 20px; height: 20px; object-fit: contain; display: block;" />
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/x.svg" alt="X" class="social-icon-img" style="width: 17px; height: 17px; object-fit: contain; display: block;" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Company</h5>
+          <a href="about.html" class="text-decoration-none d-block mb-2 adaptive-link">About Us</a>
+          <a href="services.html" class="text-decoration-none d-block mb-2 adaptive-link">Services</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Careers</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Materials</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Cement</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Steel</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Bricks</a>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Tiles</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Resources</h5>
+          <a href="categories.html" class="text-decoration-none d-block mb-2 adaptive-link">Categories</a>
+          <a href="brands.html" class="text-decoration-none d-block mb-2 adaptive-link">Brands</a>
+          <a href="pricing.html" class="text-decoration-none d-block mb-2 adaptive-link">Pricing</a>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Bulk Enquiry</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h5 class="fw-bold mb-3 adaptive-text">Support</h5>
+          <a href="contact.html" class="text-decoration-none d-block mb-2 adaptive-link">Contact</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">FAQ</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Returns</a>
+          <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Delivery Logistics</a>
+        </div>
+      </div>
+      <div
+        class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+        <p class="mb-0 small adaptive-text">&copy; 2026 Building Materials & Construction Supply Store. All
+          Rights Reserved.</p>
+        <div class="d-flex gap-3 mt-3 mt-md-0">
+          <a href="#" class="small text-decoration-none adaptive-link">Terms</a>
+          <a href="#" class="small text-decoration-none adaptive-link">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Initializations -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Initialize CountUp.js
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+
+      const countElements = document.querySelectorAll('.count-up');
+      countElements.forEach(el => {
+        const val = parseInt(el.getAttribute('data-val'), 10);
+        let countUp = new countUp.CountUp(el, val, { duration: 3 });
+
+        // Simple Intersection Observer to start counting when in view
+        let observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              if (!countUp.error) countUp.start();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+        observer.observe(el);
+      });
+
+      // GSAP ScrollTrigger Animations (Subtle and Premium)
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".hero-content", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
+        ease: "power3.out"
+      });
+
+      gsap.from(".hero-visual", {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.4,
+        ease: "power3.out"
+      });
+
+      // Card Stagger
+      gsap.from(".premium-card", {
+        scrollTrigger: {
+          trigger: ".premium-card",
+          start: "top 80%"
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.1,
+        ease: "power3.out"
+      });
+    });
+  </script>
+</body>
+
+</html>
+
