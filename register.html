@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -72,7 +72,7 @@
                 <div class="col-12">
                   <label class="form-label fw-bold small text-dark">Password</label>
                   <div class="position-relative">
-                    <input type="password" id="regPassword" class="form-control form-control-custom px-5 text-dark bg-background text-start" placeholder="••••••••" dir="auto">
+                    <input type="password" id="regPassword" class="form-control form-control-custom px-5 text-dark bg-background text-start" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" dir="auto">
                     <button type="button" class="btn border-0 position-absolute top-50 end-0 translate-middle-y text-muted" onclick="const p=document.getElementById('regPassword'); const i=this.querySelector('i'); if(p.type==='password'){p.type='text'; i.setAttribute('data-lucide', 'eye-off');}else{p.type='password'; i.setAttribute('data-lucide', 'eye');} lucide.createIcons();">
                       <i data-lucide="eye" style="width:16px;"></i>
                     </button>
@@ -81,7 +81,7 @@
                 <div class="col-12">
                   <label class="form-label fw-bold small text-dark">Confirm Password</label>
                   <div class="position-relative">
-                    <input type="password" id="regConfirmPassword" class="form-control form-control-custom px-5 text-dark bg-background text-start" placeholder="••••••••" dir="auto">
+                    <input type="password" id="regConfirmPassword" class="form-control form-control-custom px-5 text-dark bg-background text-start" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" dir="auto">
                     <button type="button" class="btn border-0 position-absolute top-50 end-0 translate-middle-y text-muted" onclick="const p=document.getElementById('regConfirmPassword'); const i=this.querySelector('i'); if(p.type==='password'){p.type='text'; i.setAttribute('data-lucide', 'eye-off');}else{p.type='password'; i.setAttribute('data-lucide', 'eye');} lucide.createIcons();">
                       <i data-lucide="eye" style="width:16px;"></i>
                     </button>
@@ -132,8 +132,15 @@
       lucide.createIcons();
     });
   </script>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </a>
 </body>
 </html>
+
+
 
 
 
