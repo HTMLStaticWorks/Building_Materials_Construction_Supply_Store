@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Industrial Procurement | Building Materials &amp; Construction Supply</title>
   <meta name="description" content="Industrial procurement platform for building materials. Complete supply network.">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=1.1">
-  
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.8.0/countUp.umd.js"></script>
   <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
 </head>
+
 <body>
 
   <!-- Navigation (Same as index) -->
@@ -27,8 +29,8 @@
 
       <!-- Mobile toggles placed carefully before hamburger -->
       <div class="d-flex align-items-center mobile-menu-btn gap-2">
-        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
-          aria-controls="mobileMenu">
+        <button class="action-icon position-relative border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu" aria-controls="mobileMenu">
           <i data-lucide="menu" style="pointer-events: none;"></i>
         </button>
       </div>
@@ -97,7 +99,7 @@
         </li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="pricing.html">Pricing</a></li>
         <li class="nav-item px-3 py-2"><a class="nav-link text-center" href="contact.html">Contact</a></li>
-                <!-- Mobile Actions & Toggles -->
+        <!-- Mobile Actions & Toggles -->
         <li class="nav-item px-3 py-2 border-top mt-2">
           <div class="d-flex align-items-center justify-content-center gap-4">
             <button class="action-icon" id="theme-toggle-mobile" aria-label="Toggle theme">
@@ -115,7 +117,7 @@
             </a>
           </div>
         </li>
-        
+
         <!-- Mobile CTA -->
         <li class="nav-item px-3 py-3 mt-2 text-center">
           <a href="quote.html" class="btn-primary-custom w-100 justify-content-center">Get Quote</a>
@@ -136,36 +138,54 @@
               <span class="text-muted fw-bold">Procurement</span>
             </div>
             <h1 class="display-3 fw-bolder mb-4 text-dark lh-sm">
-              Everything Your <br><span class="text-primary-custom" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80'); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: cover; background-position: center;">Project Needs.</span><br>One Reliable Partner.
+              Everything Your <br><span class="text-primary-custom"
+                style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=400&q=80'); -webkit-background-clip: text; background-clip: text; color: transparent; background-size: cover; background-position: center;">Project
+                Needs.</span><br>One Reliable Partner.
             </h1>
-            <p class="lead mb-4 text-muted border-start border-4 border-warning ps-4 mx-auto mx-lg-0" style="max-width: 600px; text-align: left;">
-              Advanced material sourcing platform. Track orders, manage bulk quotations, and secure scheduled deliveries through our unified procurement dashboard.
+            <p class="lead mb-4 text-muted border-start border-4 border-warning ps-4 mx-auto mx-lg-0"
+              style="max-width: 600px; text-align: left;">
+              Advanced material sourcing platform. Track orders, manage bulk quotations, and secure scheduled deliveries
+              through our unified procurement dashboard.
             </p>
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-              <a href="categories.html" class="btn-dark btn btn-lg fw-bold rounded-0 px-4 py-3 w-100 w-sm-auto">Open Catalog</a>
-              <a href="pricing.html" class="btn-outline-custom border-dark text-dark btn-lg rounded-0 px-4 py-3 d-flex justify-content-center align-items-center gap-2 w-100 w-sm-auto">Contractor Rates <i data-lucide="arrow-right"></i></a>
+              <a href="categories.html" class="btn-dark btn btn-lg fw-bold rounded-0 px-4 py-3 w-100 w-sm-auto">Open
+                Catalog</a>
+              <a href="pricing.html"
+                class="btn-outline-custom border-dark text-dark btn-lg rounded-0 px-4 py-3 d-flex justify-content-center align-items-center gap-2 w-100 w-sm-auto">Contractor
+                Rates <i data-lucide="arrow-right"></i></a>
             </div>
           </div>
         </div>
-        
+
         <!-- RIGHT: Interactive Product/Material Composition -->
-        <div class="col-lg-6 bg-light position-relative h-100 min-vh-100 p-5 d-flex align-items-center justify-content-center overflow-hidden">
+        <div
+          class="col-lg-6 bg-light position-relative h-100 min-vh-100 p-5 d-flex align-items-center justify-content-center overflow-hidden">
           <div class="blueprint-bg position-absolute top-0 start-0 w-100 h-100" style="opacity: 0.3;"></div>
-          
+
           <!-- Desktop View: Absolute Positioning -->
-          <div class="position-relative w-100 h-100 d-none d-lg-flex align-items-center justify-content-center composition-area" style="perspective: 1000px;">
+          <div
+            class="position-relative w-100 h-100 d-none d-lg-flex align-items-center justify-content-center composition-area"
+            style="perspective: 1000px;">
             <!-- Center piece -->
-            <img src="assets/images/home2-hero1.png" alt="Hero 1" class="position-absolute shadow-lg block-anim rounded" style="width: 250px; height: 250px; object-fit: cover; z-index: 2; transform: translateZ(50px);">
+            <img src="assets/images/home2-hero1.png" alt="Hero 1" class="position-absolute shadow-lg block-anim rounded"
+              style="width: 250px; height: 250px; object-fit: cover; z-index: 2; transform: translateZ(50px);">
             <!-- Floating materials -->
-            <img src="assets/images/home2-hero2.png" alt="Hero 2" class="position-absolute shadow rounded block-anim" style="width: 180px; height: 180px; object-fit: cover; top: 15%; left: 10%; transform: translateZ(20px);">
-            <img src="assets/images/home2-hero3.png" alt="Hero 3" class="position-absolute shadow rounded block-anim" style="width: 160px; height: 220px; object-fit: cover; bottom: 15%; right: 10%; transform: translateZ(80px);">
+            <img src="assets/images/home2-hero2.png" alt="Hero 2" class="position-absolute shadow rounded block-anim"
+              style="width: 180px; height: 180px; object-fit: cover; top: 15%; left: 10%; transform: translateZ(20px);">
+            <img src="assets/images/home2-hero3.png" alt="Hero 3" class="position-absolute shadow rounded block-anim"
+              style="width: 160px; height: 220px; object-fit: cover; bottom: 15%; right: 10%; transform: translateZ(80px);">
           </div>
 
           <!-- Mobile View: One by One Stacked -->
-          <div class="position-relative w-100 d-flex d-lg-none flex-column gap-4 align-items-center justify-content-center py-5" style="z-index: 1;">
-            <img src="assets/images/home2-hero1.png" alt="Hero 1" class="shadow-lg block-anim rounded" style="width: 100%; max-width: 280px; height: 250px; object-fit: cover;">
-            <img src="assets/images/home2-hero2.png" alt="Hero 2" class="shadow block-anim rounded" style="width: 100%; max-width: 280px; height: 180px; object-fit: cover;">
-            <img src="assets/images/home2-hero3.png" alt="Hero 3" class="shadow block-anim rounded" style="width: 100%; max-width: 280px; height: 220px; object-fit: cover;">
+          <div
+            class="position-relative w-100 d-flex d-lg-none flex-column gap-4 align-items-center justify-content-center py-5"
+            style="z-index: 1;">
+            <img src="assets/images/home2-hero1.png" alt="Hero 1" class="shadow-lg block-anim rounded"
+              style="width: 100%; max-width: 280px; height: 250px; object-fit: cover;">
+            <img src="assets/images/home2-hero2.png" alt="Hero 2" class="shadow block-anim rounded"
+              style="width: 100%; max-width: 280px; height: 180px; object-fit: cover;">
+            <img src="assets/images/home2-hero3.png" alt="Hero 3" class="shadow block-anim rounded"
+              style="width: 100%; max-width: 280px; height: 220px; object-fit: cover;">
           </div>
         </div>
       </div>
@@ -173,83 +193,110 @@
   </section>
 
   <!-- Procurement Dashboard Features (Ultra-Modern Typography Layout) -->
-  <section class="bg-dark text-white position-relative overflow-hidden" style="min-height: 85vh; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
+  <section class="bg-dark text-white position-relative overflow-hidden"
+    style="min-height: 85vh; display: flex; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.05);">
     <!-- Abstract glowing background -->
-    <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 70vw; height: 70vw; background: radial-gradient(circle, rgba(245,158,11,0.08) 0%, rgba(0,0,0,0) 60%); z-index: 0; pointer-events: none;"></div>
-    
+    <div class="position-absolute top-50 start-50 translate-middle rounded-circle"
+      style="width: 70vw; height: 70vw; background: radial-gradient(circle, rgba(245,158,11,0.08) 0%, rgba(0,0,0,0) 60%); z-index: 0; pointer-events: none;">
+    </div>
+
     <div class="container position-relative z-1 py-5 my-5">
       <div class="row mb-5">
         <div class="col-lg-10 mx-auto text-center">
-          <span class="badge border border-warning text-warning rounded-pill px-3 py-2 mb-4 fw-bold text-uppercase" style="background: rgba(245,158,11,0.1); letter-spacing: 2px;">Next-Gen Procurement</span>
+          <span class="badge border border-warning text-warning rounded-pill px-3 py-2 mb-4 fw-bold text-uppercase"
+            style="background: rgba(245,158,11,0.1); letter-spacing: 2px;">Next-Gen Procurement</span>
           <h2 class="display-2 fw-bolder mb-4 lh-1 text-white">
             Data-Driven. <br>
-            <span class="text-transparent" style="background: linear-gradient(90deg, #F59E0B, #FCD34D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Zero Guesswork.</span>
+            <span class="text-transparent"
+              style="background: linear-gradient(90deg, #F59E0B, #FCD34D); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Zero
+              Guesswork.</span>
           </h2>
           <p class="lead text-secondary-subtle mx-auto" style="max-width: 650px;">
-            Step into the future of material sourcing. No clunky dashboards or cards—just pure, real-time data flowing directly into your workflow.
+            Step into the future of material sourcing. No clunky dashboards or cards - just pure, real-time data flowing
+            directly into your workflow.
           </p>
         </div>
       </div>
 
       <!-- Feature Grid without Cards -->
-      <div class="row g-0 align-items-stretch mt-5" style="border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
+      <div class="row g-0 align-items-stretch mt-5"
+        style="border-top: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1);">
         <!-- Column 1 -->
-        <div class="col-md-4 position-relative border-end-md d-flex flex-column" style="border-color: rgba(255,255,255,0.1) !important; transition: all 0.3s ease;">
-          <img src="assets/images/live.png" alt="Live Feature" class="w-100 d-block" style="object-fit: cover; min-height: 200px;">
+        <div class="col-md-4 position-relative border-end-md d-flex flex-column"
+          style="border-color: rgba(255,255,255,0.1) !important; transition: all 0.3s ease;">
+          <img src="assets/images/live.png" alt="Live Feature" class="w-100 d-block"
+            style="object-fit: cover; min-height: 200px;">
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning" style="opacity: 0.03;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Live</h1>
             <h4 class="fw-bold text-white mb-3 text-nowrap">Budget Tracking</h4>
-            <p class="text-secondary-subtle mb-0">Watch your cart value and bulk discounts update in real-time as you scale your order.</p>
+            <p class="text-secondary-subtle mb-0">Watch your cart value and bulk discounts update in real-time as you
+              scale your order.</p>
           </div>
         </div>
-        
+
         <!-- Column 2 -->
-        <div class="col-md-4 position-relative border-end-md d-flex flex-column" style="border-color: rgba(255,255,255,0.1) !important; transition: all 0.3s ease;">
-          <img src="assets/images/sync.png" alt="Sync Feature" class="w-100 d-block" style="object-fit: cover; min-height: 200px;">
+        <div class="col-md-4 position-relative border-end-md d-flex flex-column"
+          style="border-color: rgba(255,255,255,0.1) !important; transition: all 0.3s ease;">
+          <img src="assets/images/sync.png" alt="Sync Feature" class="w-100 d-block"
+            style="object-fit: cover; min-height: 200px;">
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-white" style="opacity: 0.02;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Sync</h1>
             <h4 class="fw-bold text-white mb-3 text-nowrap">Multi-Site Routing</h4>
-            <p class="text-secondary-subtle mb-0">Command your logistics fleet. Split single bulk orders seamlessly across multiple complex project sites.</p>
+            <p class="text-secondary-subtle mb-0">Command your logistics fleet. Split single bulk orders seamlessly
+              across multiple complex project sites.</p>
           </div>
         </div>
-        
+
         <!-- Column 3 -->
         <div class="col-md-4 position-relative d-flex flex-column" style="transition: all 0.3s ease;">
-          <img src="assets/images/auto.png" alt="Auto Feature" class="w-100 d-block" style="object-fit: cover; min-height: 200px;">
+          <img src="assets/images/auto.png" alt="Auto Feature" class="w-100 d-block"
+            style="object-fit: cover; min-height: 200px;">
           <div class="p-4 p-xl-5 position-relative flex-grow-1">
             <div class="position-absolute top-0 start-0 w-100 h-100 bg-success" style="opacity: 0.03;"></div>
             <h1 class="display-4 fw-bolder text-white mb-2" style="opacity: 0.9;">Auto</h1>
             <h4 class="fw-bold text-white mb-3 text-nowrap">Smart Inventory</h4>
-            <p class="text-secondary-subtle mb-0">Tap into our API. When your site runs low, our system instantly flags it and prepares the next shipment.</p>
+            <p class="text-secondary-subtle mb-0">Tap into our API. When your site runs low, our system instantly flags
+              it and prepares the next shipment.</p>
           </div>
         </div>
       </div>
-      
+
       <!-- Scrolling Marquee -->
       <div class="mt-4 overflow-hidden py-3" style="white-space: nowrap; opacity: 0.7;">
         <div class="d-inline-block text-white font-monospace small" style="animation: scrollLeft 20s linear infinite;">
-          <span class="mx-4 text-warning">● LIVE</span> CART VALUE: $24,500 
-          <span class="mx-4 text-warning">● LIVE</span> MULTI-SITE TRANSIT: ACTIVE 
-          <span class="mx-4 text-warning">● LIVE</span> AUTOMATED INVENTORY: CONNECTED 
-          <span class="mx-4 text-warning">● LIVE</span> CART VALUE: $24,500 
-          <span class="mx-4 text-warning">● LIVE</span> MULTI-SITE TRANSIT: ACTIVE 
-          <span class="mx-4 text-warning">● LIVE</span> AUTOMATED INVENTORY: CONNECTED
+          <span class="mx-4 text-warning">&bull; LIVE</span> CART VALUE: $24,500
+          <span class="mx-4 text-warning">&bull; LIVE</span> MULTI-SITE TRANSIT: ACTIVE
+          <span class="mx-4 text-warning">&bull; LIVE</span> AUTOMATED INVENTORY: CONNECTED
+          <span class="mx-4 text-warning">&bull; LIVE</span> CART VALUE: $24,500
+          <span class="mx-4 text-warning">&bull; LIVE</span> MULTI-SITE TRANSIT: ACTIVE
+          <span class="mx-4 text-warning">&bull; LIVE</span> AUTOMATED INVENTORY: CONNECTED
         </div>
       </div>
     </div>
-    
+
     <style>
       @keyframes scrollLeft {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-50%); }
+        0% {
+          transform: translateX(0%);
+        }
+
+        100% {
+          transform: translateX(-50%);
+        }
       }
+
       @media (min-width: 768px) {
-        .border-end-md { border-right: 1px solid rgba(255,255,255,0.1); }
+        .border-end-md {
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
       }
+
       @media (max-width: 767px) {
-        .border-end-md { border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .border-end-md {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
       }
     </style>
   </section>
@@ -264,9 +311,12 @@
         </div>
         <div class="d-flex gap-2 flex-wrap justify-content-center" id="material-filter-btns">
           <button class="btn btn-dark active rounded-pill px-4 filter-btn" data-filter="all">All</button>
-          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="structural">Structural</button>
-          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="finishes">Finishes</button>
-          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn" data-filter="plumbing">Plumbing</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn"
+            data-filter="structural">Structural</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn"
+            data-filter="finishes">Finishes</button>
+          <button class="btn btn-outline-secondary bg-white rounded-pill px-4 filter-btn"
+            data-filter="plumbing">Plumbing</button>
         </div>
       </div>
 
@@ -275,7 +325,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="structural">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/High-Strength Cement 53 Grade.png" alt="Cement" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/High-Strength Cement 53 Grade.png" alt="Cement" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -285,7 +336,8 @@
               <h6 class="fw-bold">High-Strength Cement 53 Grade</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$6.80 <span class="fs-6 text-muted fw-normal">/bag</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -293,7 +345,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="structural">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/TMT Rebar 16mm (Per Ton).png" alt="Steel" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/TMT Rebar 16mm (Per Ton).png" alt="Steel" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -302,7 +355,8 @@
               <h6 class="fw-bold">TMT Rebar 16mm (Per Ton)</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$820.00 <span class="fs-6 text-muted fw-normal">/ton</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -310,7 +364,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="structural">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Premium Red Clay Bricks.png" alt="Bricks" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Premium Red Clay Bricks.png" alt="Bricks" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -319,7 +374,8 @@
               <h6 class="fw-bold">Premium Red Clay Bricks</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$0.45 <span class="fs-6 text-muted fw-normal">/unit</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -327,7 +383,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="structural">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Ready-Mix Concrete (M30).png" alt="Concrete" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Ready-Mix Concrete (M30).png" alt="Concrete" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -336,17 +393,19 @@
               <h6 class="fw-bold">Ready-Mix Concrete (M30)</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$85.00 <span class="fs-6 text-muted fw-normal">/cu.m</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
         </div>
-        
+
         <!-- Finishes Cards -->
         <div class="col-md-6 col-lg-3 material-card-item" data-category="finishes">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Matt Finish Porcelain 80x80.png" alt="Tiles" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Matt Finish Porcelain 80x80.png" alt="Tiles" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -356,7 +415,8 @@
               <h6 class="fw-bold">Matt Finish Porcelain 80x80</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$18.50 <span class="fs-6 text-muted fw-normal">/sq.m</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -364,7 +424,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="finishes">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Premium Interior Emulsion (20L).png" alt="Paint" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Premium Interior Emulsion (20L).png" alt="Paint" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -373,7 +434,8 @@
               <h6 class="fw-bold">Premium Interior Emulsion (20L)</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$120.00 <span class="fs-6 text-muted fw-normal">/bucket</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -381,7 +443,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="finishes">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Oak Wood Laminate Flooring.png" alt="Laminate" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Oak Wood Laminate Flooring.png" alt="Laminate" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -390,7 +453,8 @@
               <h6 class="fw-bold">Oak Wood Laminate Flooring</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$24.00 <span class="fs-6 text-muted fw-normal">/sq.m</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -398,7 +462,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="finishes">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Toughened Glass 12mm.png" alt="Glass" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Toughened Glass 12mm.png" alt="Glass" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -407,7 +472,8 @@
               <h6 class="fw-bold">Toughened Glass 12mm</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$45.00 <span class="fs-6 text-muted fw-normal">/sq.m</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -417,7 +483,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="plumbing">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/PVC Pipe Schedule 40 - 6.png" alt="Plumbing" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/PVC Pipe Schedule 40 - 6.png" alt="Plumbing" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -426,7 +493,8 @@
               <h6 class="fw-bold">PVC Pipe Schedule 40 - 6"</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$22.00 <span class="fs-6 text-muted fw-normal">/unit</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -434,7 +502,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="plumbing">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Industrial Brass Gate Valve 2.png" alt="Valve" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Industrial Brass Gate Valve 2.png" alt="Valve" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -443,7 +512,8 @@
               <h6 class="fw-bold">Industrial Brass Gate Valve 2"</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$48.50 <span class="fs-6 text-muted fw-normal">/unit</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -451,7 +521,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="plumbing">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Commercial Sensor Faucet.png" alt="Faucet" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Commercial Sensor Faucet.png" alt="Faucet" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -460,7 +531,8 @@
               <h6 class="fw-bold">Commercial Sensor Faucet</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$115.00 <span class="fs-6 text-muted fw-normal">/unit</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -468,7 +540,8 @@
         <div class="col-md-6 col-lg-3 material-card-item" data-category="plumbing">
           <div class="premium-card d-flex flex-column h-100">
             <div class="card-image" style="height: 180px;">
-              <img src="assets/images/Polyethylene Water Tank 5000L.png" alt="Tank" class="w-100 h-100" style="object-fit: contain;">
+              <img src="assets/images/Polyethylene Water Tank 5000L.png" alt="Tank" class="w-100 h-100"
+                style="object-fit: contain;">
             </div>
             <div class="p-3 d-flex flex-column flex-grow-1">
               <div class="d-flex justify-content-between mb-2">
@@ -477,7 +550,8 @@
               <h6 class="fw-bold">Polyethylene Water Tank 5000L</h6>
               <div class="mt-auto d-flex justify-content-between align-items-center pt-3 border-top mt-3">
                 <div class="fw-bold fs-5">$650.00 <span class="fs-6 text-muted fw-normal">/unit</span></div>
-                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i> Add</button>
+                <button class="btn-primary-custom px-3 py-1" style="font-size: 0.85rem;"><i data-lucide="plus"></i>
+                  Add</button>
               </div>
             </div>
           </div>
@@ -485,10 +559,10 @@
       </div>
 
       <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
           const filterBtns = document.querySelectorAll('.filter-btn');
           const cards = document.querySelectorAll('.material-card-item');
-          
+
           filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
               // Remove active state from all buttons
@@ -496,16 +570,16 @@
                 b.classList.remove('btn-dark', 'active');
                 b.classList.add('btn-outline-secondary', 'bg-white');
               });
-              
+
               // Add active state to clicked button
               btn.classList.remove('btn-outline-secondary', 'bg-white');
               btn.classList.add('btn-dark', 'active');
-              
+
               const filter = btn.getAttribute('data-filter');
-              
+
               // Filter cards
               cards.forEach(card => {
-                if(filter === 'all' || card.getAttribute('data-category') === filter) {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
                   card.style.display = 'block';
                 } else {
                   card.style.display = 'none';
@@ -601,11 +675,13 @@
   <!-- Bulk Supply CTA -->
   <section class="section-padding">
     <div class="container">
-      <div class="card bg-body-tertiary position-relative overflow-hidden border-0 shadow-lg" style="border-radius: 2rem;">
+      <div class="card bg-body-tertiary position-relative overflow-hidden border-0 shadow-lg"
+        style="border-radius: 2rem;">
         <div class="card-body position-relative z-1 text-center py-5 px-4 px-md-5">
           <div class="py-lg-5">
             <h2 class="display-4 fw-bolder mb-4 text-body">Ready to streamline your supply chain?</h2>
-            <p class="lead mb-5 mx-auto text-body-secondary" style="max-width: 700px;">Open a corporate account today to access the dashboard, volume discounts, and 30-day payment terms for qualified contractors.</p>
+            <p class="lead mb-5 mx-auto text-body-secondary" style="max-width: 700px;">Open a corporate account today to
+              access the dashboard, volume discounts, and 30-day payment terms for qualified contractors.</p>
             <div class="d-flex justify-content-center gap-3 flex-wrap mobile-stack-btns">
               <a href="register.html" class="btn btn-primary btn-lg fw-bold px-5 hover-glow">Open Corporate Account</a>
               <a href="contact.html" class="btn btn-outline-secondary btn-lg fw-bold px-5 hover-glow">Contact Sales</a>
@@ -618,12 +694,27 @@
 
   <!-- Footer -->
   <style>
-    .adaptive-footer { background-color: var(--bg-primary) !important; }
-    .adaptive-text { color: var(--text-primary) !important; }
-    .adaptive-link { color: var(--text-secondary) !important; transition: color 0.2s; }
-    .adaptive-link:hover { color: var(--accent-primary) !important; }
+    .adaptive-footer {
+      background-color: var(--bg-primary) !important;
+    }
+
+    .adaptive-text {
+      color: var(--text-primary) !important;
+    }
+
+    .adaptive-link {
+      color: var(--text-secondary) !important;
+      transition: color 0.2s;
+    }
+
+    .adaptive-link:hover {
+      color: var(--accent-primary) !important;
+    }
+
     /* removed invert to keep original icon colors in dark mode */
-    [data-theme="dark"] .social-icon-wrapper { border-color: var(--border-color) !important; }
+    [data-theme="dark"] .social-icon-wrapper {
+      border-color: var(--border-color) !important;
+    }
   </style>
   <footer class="adaptive-footer border-top pt-5 pb-4">
     <div class="container">
@@ -637,17 +728,29 @@
           <p class="mb-4 adaptive-text">The leading platform for professional building materials. Supplying
             contractors, builders, and developers worldwide with premium products and unbeatable logistics.</p>
           <div class="d-flex gap-3 align-items-center mt-1">
-            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
-              <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/instagram.svg" alt="Instagram" class="social-icon-img"
+                style="width: 18px; height: 18px; object-fit: contain; display: block;" />
             </a>
-            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
-              <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img" style="width: 18px; height: 18px; object-fit: contain; display: block;" />
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/facebook.svg" alt="Facebook" class="social-icon-img"
+                style="width: 18px; height: 18px; object-fit: contain; display: block;" />
             </a>
-            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
-              <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img" style="width: 20px; height: 20px; object-fit: contain; display: block;" />
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/youtube.svg" alt="YouTube" class="social-icon-img"
+                style="width: 20px; height: 20px; object-fit: contain; display: block;" />
             </a>
-            <a href="#" class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper" style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
-              <img src="assets/images/social/x.svg" alt="X" class="social-icon-img" style="width: 17px; height: 17px; object-fit: contain; display: block;" />
+            <a href="#"
+              class="d-flex align-items-center justify-content-center border rounded-circle hover-glow social-icon-wrapper"
+              style="width: 38px; height: 38px; border-color: #e2e8f0 !important; text-decoration: none;">
+              <img src="assets/images/social/x.svg" alt="X" class="social-icon-img"
+                style="width: 17px; height: 17px; object-fit: contain; display: block;" />
             </a>
           </div>
         </div>
@@ -680,8 +783,8 @@
           <a href="#" class="text-decoration-none d-block mb-2 adaptive-link">Delivery Logistics</a>
         </div>
       </div>
-      <div
-        class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center" style="border-color: var(--border-color) !important;">
+      <div class="border-top pt-4 d-flex flex-column flex-md-row justify-content-between align-items-center"
+        style="border-color: var(--border-color) !important;">
         <p class="mb-0 small adaptive-text">&copy; 2026 Building Materials & Construction Supply Store. All
           Rights Reserved.</p>
         <div class="d-flex gap-3 mt-3 mt-md-0">
@@ -697,22 +800,22 @@
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
-      
+
       gsap.registerPlugin(ScrollTrigger);
-      
+
       // Hero Animations
       gsap.from(".hero-text-col > div", {
         x: -50, opacity: 0, duration: 1, ease: "power3.out"
       });
-      
+
       gsap.from(".block-anim", {
         y: 100, rotationY: 45, opacity: 0, duration: 1.5, stagger: 0.2, ease: "back.out(1.7)"
       });
-      
+
       gsap.from(".data-panel-anim", {
         scale: 0.8, opacity: 0, duration: 1, delay: 0.8, stagger: 0.3, ease: "elastic.out(1, 0.5)"
       });
-      
+
       // Dashboard Preview Reveal
       gsap.from(".dashboard-preview-anim", {
         scrollTrigger: { trigger: ".dashboard-preview-anim", start: "top 85%" },
@@ -722,17 +825,11 @@
   </script>
 
   <!-- Back to Top Button -->
-  <a href="#" class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition" aria-label="Back to Top">
+  <a href="#"
+    class="back-to-top bg-primary-custom text-white shadow-lg d-flex align-items-center justify-content-center transition"
+    aria-label="Back to Top">
     <i data-lucide="arrow-up"></i>
   </a>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
